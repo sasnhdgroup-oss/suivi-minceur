@@ -1,0 +1,1420 @@
+{
+ "version": 1,
+ "dateDebutProgramme": "2026-11-02",
+ "premierJourEntrainement": "2026-11-03",
+ "dureeCycleSemaines": 13,
+ "noteDebut": "La semaine 1 commence le lundi 2 novembre 2026 (journée de préparation). Le premier entraînement a lieu le mardi 3 novembre.",
+ "finImperative": "11h50",
+ "objectifs": {
+  "caloriesSemaine": 1650,
+  "caloriesWeekEnd": 2000,
+  "proteinesGrammes": 110,
+  "eauMillilitres": 2000,
+  "eauMillilitresJourSport": 2500,
+  "verreMillilitres": 250,
+  "plancherCalories": 1500,
+  "rythmePerteKgParSemaine": [
+   0.4,
+   0.5
+  ],
+  "paliersRecalculKg": 5,
+  "coefficientActivite": 1.45,
+  "deficitCalories": 450,
+  "formule": "Mifflin-St Jeor (femme) : 10 × poids + 6,25 × taille − 5 × âge − 161"
+ },
+ "reglesOr": [
+  "⏱️ Rythme 3-1-1 sur chaque répétition (3 s pour descendre, 1 s de pause, 1 s pour monter)",
+  "💪 Garder 2 répétitions « sous le pied » à chaque série",
+  "🌬️ Soufflez pendant l'effort",
+  "⏸️ Repos de 45 à 90 s entre les séries",
+  "🩺 En cas de douleur, arrêtez l'exercice et consultez un médecin"
+ ],
+ "explications": {
+  "seriesRepetitions": "« 3 × 12 » veut dire 3 séries de 12 répétitions, avec un temps de repos entre chaque série.",
+  "sousLePied": "Garder 2 répétitions « sous le pied » : arrêter la série quand vous pourriez encore en faire 2 de plus, sans aller jusqu'à l'échec."
+ },
+ "vitesses": {
+  "effort": 5.5,
+  "recuperation": 5
+ },
+ "planning": {
+  "lundi": {
+   "theme": "gainage",
+   "titre": "Gainage · marche en pente · aquagym",
+   "emoji": "🧱",
+   "couleur": "#1D5FC2",
+   "fond": "#E6EEFB",
+   "blocs": [
+    {
+     "heure": "9h30",
+     "type": "gainage",
+     "nom": "Gainage en tours",
+     "emoji": "🧱",
+     "dureeMinutes": 25,
+     "seance": "G"
+    },
+    {
+     "heure": "9h55",
+     "type": "intervalles",
+     "nom": "Marche en pente par intervalles",
+     "emoji": "⛰️",
+     "dureeMinutes": 30
+    },
+    {
+     "heure": "10h30",
+     "type": "aquagym",
+     "nom": "Aquagym",
+     "emoji": "🏊‍♀️",
+     "dureeMinutes": 60
+    },
+    {
+     "heure": "11h30",
+     "type": "douche",
+     "nom": "Douche",
+     "emoji": "🚿",
+     "dureeMinutes": 20
+    }
+   ]
+  },
+  "mardi": {
+   "theme": "bas",
+   "titre": "Bas du corps",
+   "emoji": "🍑",
+   "couleur": "#C2185B",
+   "fond": "#FCE7EF",
+   "blocs": [
+    {
+     "heure": "9h35",
+     "type": "echauffement",
+     "nom": "Échauffement",
+     "emoji": "🚴‍♀️",
+     "dureeMinutes": 10
+    },
+    {
+     "heure": "9h45",
+     "type": "musculation",
+     "nom": "Musculation A (bas du corps)",
+     "emoji": "🏋️‍♀️",
+     "dureeMinutes": 60,
+     "seance": "A"
+    },
+    {
+     "heure": "10h45",
+     "type": "intervalles",
+     "nom": "Marche en pente par intervalles",
+     "emoji": "⛰️",
+     "dureeMinutes": 35
+    },
+    {
+     "heure": "11h20",
+     "type": "etirements",
+     "nom": "Étirements",
+     "emoji": "🧘‍♀️",
+     "dureeMinutes": 10
+    },
+    {
+     "heure": "11h30",
+     "type": "douche",
+     "nom": "Douche",
+     "emoji": "🚿",
+     "dureeMinutes": 20
+    }
+   ]
+  },
+  "mercredi": {
+   "theme": "haut",
+   "titre": "Haut du corps",
+   "emoji": "💪",
+   "couleur": "#5B3CC4",
+   "fond": "#EEEAFB",
+   "blocs": [
+    {
+     "heure": "9h35",
+     "type": "echauffement",
+     "nom": "Échauffement",
+     "emoji": "🚴‍♀️",
+     "dureeMinutes": 10
+    },
+    {
+     "heure": "9h45",
+     "type": "musculation",
+     "nom": "Musculation B (haut du corps)",
+     "emoji": "🏋️‍♀️",
+     "dureeMinutes": 55,
+     "seance": "B"
+    },
+    {
+     "heure": "10h40",
+     "type": "pente_continue",
+     "nom": "Marche en pente continue",
+     "emoji": "⛰️",
+     "dureeMinutes": 40
+    },
+    {
+     "heure": "11h20",
+     "type": "etirements",
+     "nom": "Étirements",
+     "emoji": "🧘‍♀️",
+     "dureeMinutes": 10
+    },
+    {
+     "heure": "11h30",
+     "type": "douche",
+     "nom": "Douche",
+     "emoji": "🚿",
+     "dureeMinutes": 20
+    }
+   ]
+  },
+  "jeudi": {
+   "theme": "gainage",
+   "titre": "Gainage · marche en pente · aquagym",
+   "emoji": "🧱",
+   "couleur": "#1D5FC2",
+   "fond": "#E6EEFB",
+   "blocs": [
+    {
+     "heure": "9h30",
+     "type": "gainage",
+     "nom": "Gainage en tours",
+     "emoji": "🧱",
+     "dureeMinutes": 25,
+     "seance": "G"
+    },
+    {
+     "heure": "9h55",
+     "type": "intervalles",
+     "nom": "Marche en pente par intervalles",
+     "emoji": "⛰️",
+     "dureeMinutes": 30
+    },
+    {
+     "heure": "10h30",
+     "type": "aquagym",
+     "nom": "Aquagym",
+     "emoji": "🏊‍♀️",
+     "dureeMinutes": 60
+    },
+    {
+     "heure": "11h30",
+     "type": "douche",
+     "nom": "Douche",
+     "emoji": "🚿",
+     "dureeMinutes": 20
+    }
+   ]
+  },
+  "vendredi": {
+   "theme": "entier",
+   "titre": "Corps entier",
+   "emoji": "🔥",
+   "couleur": "#C2410C",
+   "fond": "#FDEDE3",
+   "blocs": [
+    {
+     "heure": "9h30",
+     "type": "echauffement",
+     "nom": "Échauffement",
+     "emoji": "🚴‍♀️",
+     "dureeMinutes": 10
+    },
+    {
+     "heure": "9h40",
+     "type": "musculation",
+     "nom": "Musculation C (corps entier)",
+     "emoji": "🏋️‍♀️",
+     "dureeMinutes": 70,
+     "seance": "C"
+    },
+    {
+     "heure": "10h50",
+     "type": "intervalles",
+     "nom": "Marche en pente par intervalles",
+     "emoji": "⛰️",
+     "dureeMinutes": 30
+    },
+    {
+     "heure": "11h20",
+     "type": "etirements",
+     "nom": "Étirements",
+     "emoji": "🧘‍♀️",
+     "dureeMinutes": 10
+    },
+    {
+     "heure": "11h30",
+     "type": "douche",
+     "nom": "Douche",
+     "emoji": "🚿",
+     "dureeMinutes": 20
+    }
+   ]
+  },
+  "samedi": {
+   "theme": "repos",
+   "titre": "Repos actif",
+   "emoji": "🌳",
+   "couleur": "#047857",
+   "fond": "#E3F4EC",
+   "blocs": [
+    {
+     "heure": "Quand vous voulez",
+     "type": "balade",
+     "nom": "Balade de 45 minutes ou plus",
+     "emoji": "🚶‍♀️",
+     "dureeMinutes": 45
+    }
+   ]
+  },
+  "dimanche": {
+   "theme": "repos",
+   "titre": "Repos actif · cuisine du dimanche",
+   "emoji": "🌳",
+   "couleur": "#047857",
+   "fond": "#E3F4EC",
+   "blocs": [
+    {
+     "heure": "Quand vous voulez",
+     "type": "balade",
+     "nom": "Balade de 45 minutes ou plus",
+     "emoji": "🚶‍♀️",
+     "dureeMinutes": 45
+    },
+    {
+     "heure": "Après-midi",
+     "type": "cuisine",
+     "nom": "Cuisine du dimanche (1 heure)",
+     "emoji": "👩‍🍳",
+     "dureeMinutes": 60
+    }
+   ]
+  }
+ },
+ "seances": {
+  "A": {
+   "nom": "Musculation A",
+   "sousTitre": "Bas du corps",
+   "emoji": "🍑",
+   "couleur": "#C2185B",
+   "fond": "#FCE7EF",
+   "exercices": [
+    "poussee_hanches",
+    "presse_cuisses",
+    "fentes_arriere",
+    "flexion_jambes_machine",
+    "ecartement_cuisses"
+   ]
+  },
+  "B": {
+   "nom": "Musculation B",
+   "sousTitre": "Haut du corps",
+   "emoji": "💪",
+   "couleur": "#5B3CC4",
+   "fond": "#EEEAFB",
+   "exercices": [
+    "tirage_horizontal",
+    "tirage_vertical",
+    "poussee_couchee",
+    "poussee_tete",
+    "flexion_bras",
+    "extension_bras_poulie"
+   ]
+  },
+  "C": {
+   "nom": "Musculation C",
+   "sousTitre": "Corps entier",
+   "emoji": "🔥",
+   "couleur": "#C2410C",
+   "fond": "#FDEDE3",
+   "exercices": [
+    "flexion_jambes_haltere",
+    "penche_avant",
+    "pompes_banc",
+    "tirage_un_bras",
+    "marche_halteres",
+    "planche_cote"
+   ]
+  },
+  "G": {
+   "nom": "Gainage",
+   "sousTitre": "En tours, lundi et jeudi",
+   "emoji": "🧱",
+   "couleur": "#1D5FC2",
+   "fond": "#E6EEFB",
+   "exercices": [
+    "planche",
+    "gainage_dos",
+    "planche_cote",
+    "pont_fessier",
+    "gainage_quatre_pattes"
+   ]
+  }
+ },
+ "phases": [
+  {
+   "id": "apprentissage_1",
+   "nom": "Apprentissage",
+   "semaines": [
+    1,
+    2
+   ],
+   "couleur": "#047857",
+   "pastille": "🟢",
+   "resume": "2 séries · charges légères · priorité technique",
+   "musculation": {
+    "poussee_hanches": {
+     "series": 2,
+     "reps": "15"
+    },
+    "presse_cuisses": {
+     "series": 2,
+     "reps": "15"
+    },
+    "fentes_arriere": {
+     "series": 2,
+     "reps": "12 par jambe"
+    },
+    "flexion_jambes_machine": {
+     "series": 2,
+     "reps": "15"
+    },
+    "ecartement_cuisses": {
+     "series": 2,
+     "reps": "15"
+    },
+    "tirage_horizontal": {
+     "series": 2,
+     "reps": "15"
+    },
+    "tirage_vertical": {
+     "series": 2,
+     "reps": "15"
+    },
+    "poussee_couchee": {
+     "series": 2,
+     "reps": "15"
+    },
+    "poussee_tete": {
+     "series": 2,
+     "reps": "12"
+    },
+    "flexion_bras": {
+     "series": 2,
+     "reps": "15"
+    },
+    "extension_bras_poulie": {
+     "series": 2,
+     "reps": "15"
+    },
+    "flexion_jambes_haltere": {
+     "series": 2,
+     "reps": "15"
+    },
+    "penche_avant": {
+     "series": 2,
+     "reps": "12"
+    },
+    "pompes_banc": {
+     "series": 2,
+     "reps": "8"
+    },
+    "tirage_un_bras": {
+     "series": 2,
+     "reps": "12 par bras"
+    },
+    "marche_halteres": {
+     "series": 2,
+     "reps": "30 m"
+    },
+    "planche_cote": {
+     "series": 2,
+     "reps": "20 s par côté"
+    }
+   },
+   "gainage": {
+    "tours": 2,
+    "exercices": {
+     "planche": "30 s",
+     "gainage_dos": "10 par côté",
+     "planche_cote": "20 s par côté",
+     "pont_fessier": "15",
+     "gainage_quatre_pattes": "10 par côté"
+    }
+   },
+   "intervalles": {
+    "cycles": 6,
+    "effort": {
+     "duree": 60,
+     "pente": 10,
+     "vitesse": 5.5
+    },
+    "recuperation": {
+     "duree": 120,
+     "pente": 4,
+     "vitesse": 5
+    }
+   },
+   "penteContinue": {
+    "texte": "35 min à 6 %, puis 5 min en douceur",
+    "minutes": 40,
+    "pente": 6
+   }
+  },
+  {
+   "id": "apprentissage_2",
+   "nom": "Apprentissage",
+   "semaines": [
+    3,
+    4
+   ],
+   "couleur": "#047857",
+   "pastille": "🟢",
+   "resume": "2 séries · +1 à 2,5 kg si tout passe facilement",
+   "musculation": {
+    "poussee_hanches": {
+     "series": 2,
+     "reps": "12"
+    },
+    "presse_cuisses": {
+     "series": 2,
+     "reps": "12"
+    },
+    "fentes_arriere": {
+     "series": 2,
+     "reps": "10 par jambe"
+    },
+    "flexion_jambes_machine": {
+     "series": 2,
+     "reps": "12"
+    },
+    "ecartement_cuisses": {
+     "series": 2,
+     "reps": "15"
+    },
+    "tirage_horizontal": {
+     "series": 2,
+     "reps": "12"
+    },
+    "tirage_vertical": {
+     "series": 2,
+     "reps": "12"
+    },
+    "poussee_couchee": {
+     "series": 2,
+     "reps": "12"
+    },
+    "poussee_tete": {
+     "series": 2,
+     "reps": "10"
+    },
+    "flexion_bras": {
+     "series": 2,
+     "reps": "12"
+    },
+    "extension_bras_poulie": {
+     "series": 2,
+     "reps": "12"
+    },
+    "flexion_jambes_haltere": {
+     "series": 2,
+     "reps": "12"
+    },
+    "penche_avant": {
+     "series": 2,
+     "reps": "10"
+    },
+    "pompes_banc": {
+     "series": 2,
+     "reps": "10"
+    },
+    "tirage_un_bras": {
+     "series": 2,
+     "reps": "10 par bras"
+    },
+    "marche_halteres": {
+     "series": 2,
+     "reps": "30 m"
+    },
+    "planche_cote": {
+     "series": 2,
+     "reps": "25 s par côté"
+    }
+   },
+   "gainage": {
+    "tours": 3,
+    "exercices": {
+     "planche": "40 s",
+     "gainage_dos": "10 par côté",
+     "planche_cote": "25 s par côté",
+     "pont_fessier": "15",
+     "gainage_quatre_pattes": "10 par côté"
+    }
+   },
+   "intervalles": {
+    "cycles": 8,
+    "effort": {
+     "duree": 60,
+     "pente": 12,
+     "vitesse": 5.5
+    },
+    "recuperation": {
+     "duree": 120,
+     "pente": 4,
+     "vitesse": 5
+    }
+   },
+   "penteContinue": {
+    "texte": "40 min à 7 %",
+    "minutes": 40,
+    "pente": 7
+   }
+  },
+  {
+   "id": "construction_1",
+   "nom": "Construction",
+   "semaines": [
+    5
+   ],
+   "couleur": "#B45309",
+   "pastille": "🟡",
+   "resume": "3 séries · charges modérées · 2 répétitions sous le pied",
+   "musculation": {
+    "poussee_hanches": {
+     "series": 3,
+     "reps": "12"
+    },
+    "presse_cuisses": {
+     "series": 3,
+     "reps": "12"
+    },
+    "fentes_arriere": {
+     "series": 3,
+     "reps": "10 par jambe"
+    },
+    "flexion_jambes_machine": {
+     "series": 3,
+     "reps": "12"
+    },
+    "ecartement_cuisses": {
+     "series": 3,
+     "reps": "15"
+    },
+    "tirage_horizontal": {
+     "series": 3,
+     "reps": "12"
+    },
+    "tirage_vertical": {
+     "series": 3,
+     "reps": "12"
+    },
+    "poussee_couchee": {
+     "series": 3,
+     "reps": "12"
+    },
+    "poussee_tete": {
+     "series": 3,
+     "reps": "10"
+    },
+    "flexion_bras": {
+     "series": 2,
+     "reps": "12"
+    },
+    "extension_bras_poulie": {
+     "series": 2,
+     "reps": "12"
+    },
+    "flexion_jambes_haltere": {
+     "series": 3,
+     "reps": "12"
+    },
+    "penche_avant": {
+     "series": 3,
+     "reps": "10"
+    },
+    "pompes_banc": {
+     "series": 3,
+     "reps": "8"
+    },
+    "tirage_un_bras": {
+     "series": 3,
+     "reps": "10 par bras"
+    },
+    "marche_halteres": {
+     "series": 3,
+     "reps": "30 m"
+    },
+    "planche_cote": {
+     "series": 2,
+     "reps": "30 s par côté"
+    }
+   },
+   "gainage": {
+    "tours": 3,
+    "exercices": {
+     "planche": "45 s",
+     "gainage_dos": "10 par côté",
+     "planche_cote": "30 s par côté",
+     "pont_fessier": "15",
+     "gainage_quatre_pattes": "10 par côté"
+    }
+   },
+   "intervalles": {
+    "cycles": 8,
+    "effort": {
+     "duree": 90,
+     "pente": 12,
+     "vitesse": 5.5
+    },
+    "recuperation": {
+     "duree": 90,
+     "pente": 4,
+     "vitesse": 5
+    }
+   },
+   "penteContinue": {
+    "texte": "40 min à 8 %",
+    "minutes": 40,
+    "pente": 8
+   }
+  },
+  {
+   "id": "construction_2",
+   "nom": "Construction",
+   "semaines": [
+    6,
+    7
+   ],
+   "couleur": "#B45309",
+   "pastille": "🟡",
+   "resume": "3 séries · charges en hausse · rythme 3-1-1",
+   "musculation": {
+    "poussee_hanches": {
+     "series": 3,
+     "reps": "10-12"
+    },
+    "presse_cuisses": {
+     "series": 3,
+     "reps": "10-12"
+    },
+    "fentes_arriere": {
+     "series": 3,
+     "reps": "10 par jambe"
+    },
+    "flexion_jambes_machine": {
+     "series": 3,
+     "reps": "10-12"
+    },
+    "ecartement_cuisses": {
+     "series": 3,
+     "reps": "15"
+    },
+    "tirage_horizontal": {
+     "series": 3,
+     "reps": "10-12"
+    },
+    "tirage_vertical": {
+     "series": 3,
+     "reps": "10-12"
+    },
+    "poussee_couchee": {
+     "series": 3,
+     "reps": "10-12"
+    },
+    "poussee_tete": {
+     "series": 3,
+     "reps": "10"
+    },
+    "flexion_bras": {
+     "series": 2,
+     "reps": "12"
+    },
+    "extension_bras_poulie": {
+     "series": 2,
+     "reps": "12"
+    },
+    "flexion_jambes_haltere": {
+     "series": 3,
+     "reps": "10-12"
+    },
+    "penche_avant": {
+     "series": 3,
+     "reps": "10"
+    },
+    "pompes_banc": {
+     "series": 3,
+     "reps": "10"
+    },
+    "tirage_un_bras": {
+     "series": 3,
+     "reps": "10 par bras"
+    },
+    "marche_halteres": {
+     "series": 3,
+     "reps": "30 m"
+    },
+    "planche_cote": {
+     "series": 2,
+     "reps": "30 s par côté"
+    }
+   },
+   "gainage": {
+    "tours": 3,
+    "exercices": {
+     "planche": "45 s",
+     "gainage_dos": "10 par côté",
+     "planche_cote": "30 s par côté",
+     "pont_fessier": "15",
+     "gainage_quatre_pattes": "10 par côté"
+    }
+   },
+   "intervalles": {
+    "cycles": 8,
+    "effort": {
+     "duree": 90,
+     "pente": 12,
+     "vitesse": 5.5
+    },
+    "recuperation": {
+     "duree": 90,
+     "pente": 4,
+     "vitesse": 5
+    }
+   },
+   "penteContinue": {
+    "texte": "40 min à 8 %",
+    "minutes": 40,
+    "pente": 8
+   }
+  },
+  {
+   "id": "intensification",
+   "nom": "Intensification",
+   "semaines": [
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "couleur": "#C2410C",
+   "pastille": "🟠",
+   "resume": "3 à 4 séries · 8 à 10 répétitions · charges plus lourdes",
+   "musculation": {
+    "poussee_hanches": {
+     "series": 4,
+     "reps": "8-10"
+    },
+    "presse_cuisses": {
+     "series": 4,
+     "reps": "8-10"
+    },
+    "fentes_arriere": {
+     "series": 3,
+     "reps": "8 par jambe"
+    },
+    "flexion_jambes_machine": {
+     "series": 3,
+     "reps": "8-10"
+    },
+    "ecartement_cuisses": {
+     "series": 3,
+     "reps": "12"
+    },
+    "tirage_horizontal": {
+     "series": 4,
+     "reps": "8-10"
+    },
+    "tirage_vertical": {
+     "series": 4,
+     "reps": "8-10"
+    },
+    "poussee_couchee": {
+     "series": 3,
+     "reps": "8-10"
+    },
+    "poussee_tete": {
+     "series": 3,
+     "reps": "8-10"
+    },
+    "flexion_bras": {
+     "series": 3,
+     "reps": "10"
+    },
+    "extension_bras_poulie": {
+     "series": 3,
+     "reps": "10"
+    },
+    "flexion_jambes_haltere": {
+     "series": 4,
+     "reps": "8-10"
+    },
+    "penche_avant": {
+     "series": 3,
+     "reps": "8-10"
+    },
+    "pompes_banc": {
+     "series": 3,
+     "reps": "10"
+    },
+    "tirage_un_bras": {
+     "series": 3,
+     "reps": "8-10 par bras"
+    },
+    "marche_halteres": {
+     "series": 3,
+     "reps": "40 m"
+    },
+    "planche_cote": {
+     "series": 3,
+     "reps": "30 s par côté"
+    }
+   },
+   "gainage": {
+    "tours": 3,
+    "exercices": {
+     "planche": "50 s",
+     "gainage_dos": "12 par côté",
+     "planche_cote": "35 s par côté",
+     "pont_fessier": "20",
+     "gainage_quatre_pattes": "12 par côté"
+    }
+   },
+   "intervalles": {
+    "cycles": 8,
+    "effort": {
+     "duree": 90,
+     "pente": 12,
+     "vitesse": 5.5
+    },
+    "recuperation": {
+     "duree": 90,
+     "pente": 4,
+     "vitesse": 5
+    }
+   },
+   "penteContinue": {
+    "texte": "40 min à 8 %",
+    "minutes": 40,
+    "pente": 8
+   }
+  },
+  {
+   "id": "recuperation",
+   "nom": "Semaine de récupération",
+   "semaines": [
+    13
+   ],
+   "couleur": "#1D5FC2",
+   "pastille": "🔵",
+   "resume": "Moitié des séries · charges habituelles · allure facile",
+   "musculation": {
+    "poussee_hanches": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "presse_cuisses": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "fentes_arriere": {
+     "series": 2,
+     "reps": "8 par jambe"
+    },
+    "flexion_jambes_machine": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "ecartement_cuisses": {
+     "series": 2,
+     "reps": "12"
+    },
+    "tirage_horizontal": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "tirage_vertical": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "poussee_couchee": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "poussee_tete": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "flexion_bras": {
+     "series": 1,
+     "reps": "10"
+    },
+    "extension_bras_poulie": {
+     "series": 1,
+     "reps": "10"
+    },
+    "flexion_jambes_haltere": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "penche_avant": {
+     "series": 2,
+     "reps": "8-10"
+    },
+    "pompes_banc": {
+     "series": 2,
+     "reps": "10"
+    },
+    "tirage_un_bras": {
+     "series": 2,
+     "reps": "8-10 par bras"
+    },
+    "marche_halteres": {
+     "series": 2,
+     "reps": "30 m"
+    },
+    "planche_cote": {
+     "series": 1,
+     "reps": "30 s par côté"
+    }
+   },
+   "gainage": {
+    "tours": 2,
+    "exercices": {
+     "planche": "40 s",
+     "gainage_dos": "10 par côté",
+     "planche_cote": "25 s par côté",
+     "pont_fessier": "15",
+     "gainage_quatre_pattes": "10 par côté"
+    }
+   },
+   "intervalles": {
+    "cycles": 6,
+    "effort": {
+     "duree": 60,
+     "pente": 6,
+     "vitesse": 5
+    },
+    "recuperation": {
+     "duree": 120,
+     "pente": 3,
+     "vitesse": 5
+    }
+   },
+   "penteContinue": {
+    "texte": "35 min à 5 %, allure facile",
+    "minutes": 35,
+    "pente": 5
+   }
+  }
+ ],
+ "exercices": {
+  "poussee_hanches": {
+   "nom": "Poussée de hanches",
+   "ancienNom": "Hip thrust",
+   "explication": "Dos sur un banc, on soulève le bassin : travaille les fessiers",
+   "emoji": "🍑",
+   "muscles": "Fessiers, arrière des cuisses",
+   "execution": [
+    "Asseyez-vous au sol, le haut du dos contre le bord d'un banc.",
+    "Posez une barre ou un haltère sur le pli des hanches, avec un coussin de protection.",
+    "Pieds à plat, écartés de la largeur du bassin, genoux pliés.",
+    "Poussez dans les talons pour monter le bassin jusqu'à ce que le corps soit à plat du genou à l'épaule.",
+    "Serrez fort les fessiers 1 seconde en haut, puis redescendez lentement."
+   ],
+   "respiration": "Soufflez en montant, inspirez en descendant.",
+   "erreurFrequente": "Cambrer le bas du dos en haut du mouvement au lieu de serrer les fessiers.",
+   "conseil": "Gardez le menton rentré et le regard vers vos genoux : le bassin bascule mieux.",
+   "reposSecondes": 90,
+   "mesure": "repetitions"
+  },
+  "presse_cuisses": {
+   "nom": "Presse à cuisses",
+   "ancienNom": "Presse à cuisses",
+   "explication": "Pousser une plateforme avec les jambes",
+   "emoji": "🦵",
+   "muscles": "Cuisses (avant et arrière), fessiers",
+   "execution": [
+    "Installez-vous le dos bien plaqué contre le dossier.",
+    "Pieds au milieu de la plateforme, largeur du bassin.",
+    "Débloquez la sécurité, puis descendez lentement jusqu'à ce que les genoux forment un angle droit.",
+    "Poussez dans les talons pour remonter sans verrouiller complètement les genoux."
+   ],
+   "respiration": "Soufflez en poussant, inspirez en descendant.",
+   "erreurFrequente": "Laisser le bas du dos se décoller du dossier en descendant trop bas.",
+   "conseil": "Les genoux suivent la direction des pointes de pieds, sans rentrer vers l'intérieur.",
+   "reposSecondes": 90,
+   "mesure": "repetitions"
+  },
+  "fentes_arriere": {
+   "nom": "Fentes arrière",
+   "ancienNom": "Fentes arrière",
+   "explication": "Grand pas en arrière, genou vers le sol",
+   "emoji": "🚶‍♀️",
+   "muscles": "Fessiers, cuisses",
+   "execution": [
+    "Debout, pieds largeur du bassin, un haltère léger dans chaque main (ou sans charge au début).",
+    "Faites un grand pas en arrière.",
+    "Descendez le genou arrière vers le sol, sans le poser.",
+    "Poussez dans le talon de la jambe avant pour revenir debout.",
+    "Faites toutes les répétitions d'une jambe, puis changez."
+   ],
+   "respiration": "Inspirez en descendant, soufflez en remontant.",
+   "erreurFrequente": "Le genou avant qui part loin devant les orteils.",
+   "conseil": "Gardez le buste droit et le poids sur le talon avant. Tenez-vous à un support si l'équilibre est difficile.",
+   "reposSecondes": 75,
+   "mesure": "repetitions"
+  },
+  "flexion_jambes_machine": {
+   "nom": "Flexion des jambes à la machine",
+   "ancienNom": "Leg curl",
+   "explication": "Ramener les talons vers les fesses : arrière des cuisses",
+   "emoji": "🦿",
+   "muscles": "Arrière des cuisses",
+   "execution": [
+    "Réglez la machine : le rouleau se place juste au-dessus des talons.",
+    "Tenez les poignées, le bassin reste collé au siège ou au banc.",
+    "Ramenez les talons vers les fesses.",
+    "Revenez lentement, sans laisser les poids claquer."
+   ],
+   "respiration": "Soufflez en pliant les jambes, inspirez en revenant.",
+   "erreurFrequente": "Soulever le bassin pour tricher et aller plus loin.",
+   "conseil": "Le retour lent (3 secondes) compte autant que la flexion.",
+   "reposSecondes": 60,
+   "mesure": "repetitions"
+  },
+  "ecartement_cuisses": {
+   "nom": "Écartement des cuisses à la machine",
+   "ancienNom": "Abducteurs machine",
+   "explication": "Ouvrir les jambes contre une résistance : côté des fesses",
+   "emoji": "🦋",
+   "muscles": "Côté des fessiers (moyen fessier)",
+   "execution": [
+    "Asseyez-vous, le dos contre le dossier, les coussinets à l'extérieur des genoux.",
+    "Ouvrez les jambes le plus loin possible sans bouger le dos.",
+    "Tenez 1 seconde en position ouverte.",
+    "Revenez lentement sans laisser les plaques se toucher."
+   ],
+   "respiration": "Soufflez en ouvrant, inspirez en revenant.",
+   "erreurFrequente": "Aller trop vite et laisser la machine ramener les jambes d'un coup.",
+   "conseil": "Penchez légèrement le buste en avant pour mieux sentir le haut des fessiers.",
+   "reposSecondes": 45,
+   "mesure": "repetitions"
+  },
+  "tirage_horizontal": {
+   "nom": "Tirage horizontal assis",
+   "ancienNom": "Rowing poulie basse",
+   "explication": "Tirer une poignée vers le nombril : milieu du dos",
+   "emoji": "🚣‍♀️",
+   "muscles": "Milieu du dos, arrière des épaules, bras",
+   "execution": [
+    "Asseyez-vous, pieds sur les cale-pieds, genoux légèrement fléchis.",
+    "Saisissez la poignée, dos droit, poitrine ouverte.",
+    "Tirez la poignée vers le nombril en serrant les omoplates l'une vers l'autre.",
+    "Revenez lentement, bras tendus, sans arrondir le dos."
+   ],
+   "respiration": "Soufflez en tirant, inspirez en revenant.",
+   "erreurFrequente": "Se balancer d'avant en arrière avec le buste pour tirer plus lourd.",
+   "conseil": "Pensez à tirer avec les coudes, pas avec les mains.",
+   "reposSecondes": 75,
+   "mesure": "repetitions"
+  },
+  "tirage_vertical": {
+   "nom": "Tirage vertical",
+   "ancienNom": "Tirage vertical",
+   "explication": "Tirer une barre vers le haut de la poitrine : largeur du dos",
+   "emoji": "⬇️",
+   "muscles": "Dos (grands dorsaux), bras",
+   "execution": [
+    "Asseyez-vous, cuisses calées sous les boudins.",
+    "Saisissez la barre un peu plus large que les épaules.",
+    "Penchez légèrement le buste en arrière, poitrine sortie.",
+    "Tirez la barre vers le haut de la poitrine en descendant les coudes.",
+    "Remontez lentement, bras tendus."
+   ],
+   "respiration": "Soufflez en tirant, inspirez en remontant.",
+   "erreurFrequente": "Tirer la barre derrière la nuque.",
+   "conseil": "Imaginez que vous voulez mettre les coudes dans vos poches arrière.",
+   "reposSecondes": 75,
+   "mesure": "repetitions"
+  },
+  "poussee_couchee": {
+   "nom": "Poussée couchée avec haltères",
+   "ancienNom": "Développé couché",
+   "explication": "Allongée, pousser les haltères vers le haut : poitrine",
+   "emoji": "🏋️‍♀️",
+   "muscles": "Poitrine, avant des épaules, arrière des bras",
+   "execution": [
+    "Allongez-vous sur un banc plat, pieds à plat au sol.",
+    "Un haltère dans chaque main, au niveau de la poitrine, coudes à 45° du corps.",
+    "Poussez les haltères vers le haut jusqu'à tendre les bras.",
+    "Redescendez lentement jusqu'à ce que les coudes soient un peu sous le banc."
+   ],
+   "respiration": "Soufflez en poussant, inspirez en descendant.",
+   "erreurFrequente": "Ouvrir les coudes à 90°, ce qui fatigue les épaules.",
+   "conseil": "Gardez les omoplates serrées contre le banc pendant toute la série.",
+   "reposSecondes": 75,
+   "mesure": "repetitions"
+  },
+  "poussee_tete": {
+   "nom": "Poussée au-dessus de la tête",
+   "ancienNom": "Développé épaules",
+   "explication": "Assise, pousser les haltères vers le plafond : épaules",
+   "emoji": "🙆‍♀️",
+   "muscles": "Épaules, arrière des bras",
+   "execution": [
+    "Asseyez-vous sur un banc avec dossier droit.",
+    "Haltères à hauteur des oreilles, paumes vers l'avant.",
+    "Poussez vers le plafond sans cogner les haltères en haut.",
+    "Redescendez lentement à hauteur des oreilles."
+   ],
+   "respiration": "Soufflez en poussant, inspirez en descendant.",
+   "erreurFrequente": "Creuser le bas du dos pour pousser plus lourd.",
+   "conseil": "Serrez les abdominaux et gardez le dos collé au dossier.",
+   "reposSecondes": 75,
+   "mesure": "repetitions"
+  },
+  "flexion_bras": {
+   "nom": "Flexion des bras avec haltères",
+   "ancienNom": "Curl biceps",
+   "explication": "Plier les coudes : devant du bras",
+   "emoji": "💪",
+   "muscles": "Devant du bras (biceps)",
+   "execution": [
+    "Debout, un haltère dans chaque main, bras le long du corps, paumes vers l'avant.",
+    "Pliez les coudes pour monter les haltères vers les épaules.",
+    "Redescendez lentement jusqu'à tendre les bras."
+   ],
+   "respiration": "Soufflez en montant, inspirez en descendant.",
+   "erreurFrequente": "Balancer le dos pour monter la charge.",
+   "conseil": "Les coudes restent collés au corps, comme fixés.",
+   "reposSecondes": 60,
+   "mesure": "repetitions"
+  },
+  "extension_bras_poulie": {
+   "nom": "Extension des bras à la poulie",
+   "ancienNom": "Extension triceps poulie",
+   "explication": "Tendre les bras vers le bas : arrière du bras",
+   "emoji": "🦾",
+   "muscles": "Arrière du bras (triceps)",
+   "execution": [
+    "Face à la poulie haute, saisissez la corde ou la barre.",
+    "Coudes collés au corps, avant-bras à l'horizontale.",
+    "Tendez les bras vers le bas.",
+    "Remontez lentement jusqu'à l'horizontale."
+   ],
+   "respiration": "Soufflez en poussant vers le bas, inspirez en remontant.",
+   "erreurFrequente": "Laisser les coudes partir vers l'avant.",
+   "conseil": "Seuls les avant-bras bougent : les coudes ne quittent pas les côtes.",
+   "reposSecondes": 60,
+   "mesure": "repetitions"
+  },
+  "flexion_jambes_haltere": {
+   "nom": "Flexion des jambes avec haltère",
+   "ancienNom": "Goblet squat",
+   "explication": "Descendre comme pour s'asseoir, haltère contre la poitrine",
+   "emoji": "🏋️‍♀️",
+   "muscles": "Cuisses, fessiers, gainage",
+   "execution": [
+    "Debout, pieds un peu plus larges que le bassin, pointes légèrement ouvertes.",
+    "Tenez un haltère vertical contre la poitrine.",
+    "Descendez comme pour vous asseoir sur une chaise, le dos droit.",
+    "Remontez en poussant dans les talons."
+   ],
+   "respiration": "Inspirez en descendant, soufflez en remontant.",
+   "erreurFrequente": "Les talons qui se décollent ou le dos qui s'arrondit.",
+   "conseil": "Les coudes passent entre les genoux en bas : cela garde le buste droit.",
+   "reposSecondes": 90,
+   "mesure": "repetitions"
+  },
+  "penche_avant": {
+   "nom": "Penché avant avec haltères",
+   "ancienNom": "Soulevé de terre jambes tendues",
+   "explication": "Pencher le buste dos plat, jambes presque tendues : arrière des cuisses et fessiers",
+   "emoji": "🏹",
+   "muscles": "Arrière des cuisses, fessiers, bas du dos",
+   "execution": [
+    "Debout, un haltère dans chaque main devant les cuisses, genoux légèrement fléchis.",
+    "Poussez les fesses vers l'arrière et penchez le buste, dos bien plat.",
+    "Les haltères glissent le long des jambes jusqu'aux tibias.",
+    "Remontez en serrant les fessiers."
+   ],
+   "respiration": "Inspirez en descendant, soufflez en remontant.",
+   "erreurFrequente": "Arrondir le dos pour descendre plus bas.",
+   "conseil": "Descendez seulement tant que le dos reste plat. Demandez au coach de vérifier le geste.",
+   "reposSecondes": 90,
+   "mesure": "repetitions"
+  },
+  "pompes_banc": {
+   "nom": "Pompes mains sur un banc",
+   "ancienNom": "Pompes inclinées",
+   "explication": "Pompes plus faciles, mains surélevées",
+   "emoji": "🤸‍♀️",
+   "muscles": "Poitrine, épaules, arrière des bras, gainage",
+   "execution": [
+    "Mains sur le bord d'un banc, un peu plus larges que les épaules.",
+    "Pieds en arrière, corps droit de la tête aux talons.",
+    "Descendez la poitrine vers le banc en pliant les coudes.",
+    "Poussez pour revenir bras tendus."
+   ],
+   "respiration": "Inspirez en descendant, soufflez en poussant.",
+   "erreurFrequente": "Laisser le bassin s'affaisser.",
+   "conseil": "Plus le support est haut, plus c'est facile : adaptez la hauteur.",
+   "reposSecondes": 60,
+   "mesure": "repetitions"
+  },
+  "tirage_un_bras": {
+   "nom": "Tirage d'un bras avec haltère",
+   "ancienNom": "Rowing un bras",
+   "explication": "Un genou sur le banc, tirer l'haltère vers la hanche",
+   "emoji": "🚣",
+   "muscles": "Dos, arrière des épaules, bras",
+   "execution": [
+    "Un genou et une main sur le banc, dos plat.",
+    "L'autre main tient l'haltère, bras tendu vers le sol.",
+    "Tirez l'haltère vers la hanche, coude près du corps.",
+    "Redescendez lentement. Faites toutes les répétitions d'un côté, puis changez."
+   ],
+   "respiration": "Soufflez en tirant, inspirez en descendant.",
+   "erreurFrequente": "Tourner le buste pour monter l'haltère.",
+   "conseil": "Le dos reste parallèle au sol, comme une table.",
+   "reposSecondes": 60,
+   "mesure": "repetitions"
+  },
+  "marche_halteres": {
+   "nom": "Marche avec haltères",
+   "ancienNom": "Farmer walk",
+   "explication": "Marcher droite avec un haltère lourd dans chaque main",
+   "emoji": "🧳",
+   "muscles": "Avant-bras, épaules, gainage, jambes",
+   "execution": [
+    "Prenez un haltère lourd dans chaque main.",
+    "Tenez-vous bien droite, épaules basses et en arrière.",
+    "Marchez à petits pas réguliers sur la distance indiquée.",
+    "Posez les haltères en pliant les genoux, dos droit."
+   ],
+   "respiration": "Respirez normalement, sans bloquer.",
+   "erreurFrequente": "Se pencher sur le côté ou hausser les épaules.",
+   "conseil": "Regardez droit devant et serrez le ventre comme pour un gainage.",
+   "reposSecondes": 60,
+   "mesure": "distance"
+  },
+  "planche": {
+   "nom": "Planche (gainage)",
+   "ancienNom": "Planche",
+   "explication": "En appui sur les avant-bras, corps droit",
+   "emoji": "🧱",
+   "muscles": "Abdominaux, gainage profond",
+   "execution": [
+    "En appui sur les avant-bras, coudes sous les épaules.",
+    "Pieds joints ou légèrement écartés, corps droit de la tête aux talons.",
+    "Serrez fessiers et abdominaux et tenez la position."
+   ],
+   "respiration": "Respirez calmement et régulièrement, sans bloquer.",
+   "erreurFrequente": "Le bassin trop haut ou qui s'affaisse.",
+   "conseil": "Si c'est trop dur, posez les genoux au sol.",
+   "reposSecondes": 45,
+   "mesure": "duree"
+  },
+  "planche_cote": {
+   "nom": "Planche sur le côté",
+   "ancienNom": "Planche latérale",
+   "explication": "En appui sur un coude, corps de profil",
+   "emoji": "📐",
+   "muscles": "Abdominaux du côté (obliques), fessiers",
+   "execution": [
+    "Allongée sur le côté, en appui sur le coude, placé sous l'épaule.",
+    "Soulevez le bassin pour aligner tête, bassin et pieds.",
+    "Tenez, puis changez de côté."
+   ],
+   "respiration": "Respirez calmement.",
+   "erreurFrequente": "Laisser le bassin tomber vers le sol.",
+   "conseil": "Version plus facile : genoux pliés et posés au sol.",
+   "reposSecondes": 45,
+   "mesure": "duree"
+  },
+  "gainage_dos": {
+   "nom": "Gainage sur le dos",
+   "ancienNom": "Dead bug",
+   "explication": "Allongée sur le dos, tendre un bras et la jambe opposée",
+   "emoji": "🐞",
+   "muscles": "Abdominaux profonds",
+   "execution": [
+    "Allongée sur le dos, bras tendus vers le plafond, genoux pliés à 90° au-dessus des hanches.",
+    "Plaquez le bas du dos au sol.",
+    "Tendez lentement un bras derrière la tête et la jambe opposée vers l'avant.",
+    "Revenez et changez de côté."
+   ],
+   "respiration": "Soufflez en tendant, inspirez en revenant.",
+   "erreurFrequente": "Le bas du dos qui se décolle du sol.",
+   "conseil": "Allez lentement : la qualité compte plus que l'amplitude.",
+   "reposSecondes": 45,
+   "mesure": "repetitions"
+  },
+  "gainage_quatre_pattes": {
+   "nom": "Gainage à quatre pattes",
+   "ancienNom": "Bird dog",
+   "explication": "À quatre pattes, tendre un bras et la jambe opposée",
+   "emoji": "🐕",
+   "muscles": "Bas du dos, fessiers, gainage",
+   "execution": [
+    "À quatre pattes, mains sous les épaules, genoux sous les hanches.",
+    "Tendez un bras devant et la jambe opposée derrière.",
+    "Tenez 2 secondes, revenez, puis changez de côté."
+   ],
+   "respiration": "Soufflez en tendant, inspirez en revenant.",
+   "erreurFrequente": "Cambrer le dos en montant la jambe trop haut.",
+   "conseil": "Imaginez un verre d'eau posé sur votre dos : il ne doit pas tomber.",
+   "reposSecondes": 45,
+   "mesure": "repetitions"
+  },
+  "pont_fessier": {
+   "nom": "Pont fessier",
+   "ancienNom": "Pont fessier",
+   "explication": "Allongée, soulever le bassin du sol",
+   "emoji": "🌉",
+   "muscles": "Fessiers, arrière des cuisses",
+   "execution": [
+    "Allongée sur le dos, genoux pliés, pieds à plat près des fesses.",
+    "Poussez dans les talons pour soulever le bassin.",
+    "Serrez les fessiers 1 seconde en haut, puis redescendez."
+   ],
+   "respiration": "Soufflez en montant, inspirez en descendant.",
+   "erreurFrequente": "Pousser avec le bas du dos au lieu des fessiers.",
+   "conseil": "Pointes de pieds légèrement relevées : les fessiers travaillent davantage.",
+   "reposSecondes": 45,
+   "mesure": "repetitions"
+  }
+ },
+ "conseilsDuCoach": {
+  "1": "🎯 Apprenez les gestes : charges légères, travail devant le miroir, et demandez au coach de vérifier votre poussée de hanches et votre penché avant.",
+  "2": "⏱️ Rythme 3-1-1 : 3 secondes pour descendre, 1 seconde de pause, 1 seconde pour remonter. C'est la descente lente qui construit le muscle.",
+  "3": "📈 On progresse : quand toutes vos répétitions passent facilement, ajoutez 1 à 2,5 kg à la séance suivante.",
+  "4": "📏 Bilan du premier mois : mesurez votre tour de taille et de hanches. Les centimètres perdus comptent autant que la balance.",
+  "5": "🔥 Passage à 3 séries et efforts de 1 min 30 en pente. Gardez toujours 2 répétitions « sous le pied » à la fin de chaque série.",
+  "6": "😴 Récupération : 7 heures de sommeil et 110 g de protéines par jour transforment vos efforts en muscle.",
+  "7": "🏅 Fin du premier bloc : pesez-vous et mesurez-vous vendredi pour comparer avec le 3 novembre. Bravo pour votre régularité !",
+  "8": "💪 Phase d'intensification : séries plus courtes, charges plus lourdes. La technique reste la priorité absolue.",
+  "9": "🎄 Les fêtes approchent : un repas plus copieux ne gâche rien, c'est la régularité de la semaine qui compte.",
+  "10": "🥩 Une protéine à chaque repas : c'est elle qui coupe la faim et protège vos muscles pendant la perte de poids.",
+  "11": "📊 Regardez votre courbe de charges : vous soulevez bien plus qu'en novembre. Soyez fière de ce chemin.",
+  "12": "🔋 Dernière semaine lourde avant la récupération : donnez le meilleur, en gardant toujours 2 répétitions sous le pied.",
+  "13": "🌿 Semaine de récupération : moitié des séries, allure facile. Le corps se renforce pendant le repos. Le prochain cycle repart avec des charges plus élevées."
+ },
+ "weekEnd": [
+  "🚶‍♀️ Balade de 45 minutes ou plus",
+  "🍽️ Au restaurant : protéine grillée et légumes",
+  "🍰 Une seule gourmandise par repas",
+  "🥗 Repas suivant léger",
+  "😴 7 heures de sommeil",
+  "⚖️ Pesée lundi à jeun"
+ ],
+ "preparation": {
+  "date": "2026-11-02",
+  "titre": "C'est parti demain ! 🚀",
+  "liste": [
+   "🎒 Préparez votre sac de sport",
+   "🩱 Maillot et bonnet pour l'aquagym",
+   "💧 Une gourde de 1 litre",
+   "⚖️ Pesée demain matin à jeun"
+  ]
+ }
+}

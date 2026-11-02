@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon programme</title>
+<meta name="description" content="Suivi quotidien du programme minceur et musculation">
+<meta name="theme-color" content="#14161F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mon programme">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/icone.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icone-180.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="entete">
+  <div class="entete-titre" id="entete-titre">Aujourd'hui</div>
+  <button class="bouton-icone" id="bouton-reglages" aria-label="Réglages">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+  </button>
+</header>
+
+<main id="ecran" class="ecran" tabindex="-1">
+  <p class="chargement">Chargement…</p>
+</main>
+
+<nav class="onglets" aria-label="Navigation principale">
+  <button class="onglet" data-ecran="aujourdhui"><span class="onglet-emoji" aria-hidden="true">🏠</span><span>Aujourd'hui</span></button>
+  <button class="onglet" data-ecran="seance"><span class="onglet-emoji" aria-hidden="true">🏋️‍♀️</span><span>Séance</span></button>
+  <button class="onglet" data-ecran="repas"><span class="onglet-emoji" aria-hidden="true">🥗</span><span>Repas</span></button>
+  <button class="onglet" data-ecran="corps"><span class="onglet-emoji" aria-hidden="true">⚖️</span><span>Mon corps</span></button>
+  <button class="onglet" data-ecran="calendrier"><span class="onglet-emoji" aria-hidden="true">🗓️</span><span>Calendrier</span></button>
+</nav>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

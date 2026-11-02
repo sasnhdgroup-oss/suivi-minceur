@@ -1,0 +1,531 @@
+{
+ "version": 1,
+ "regle": "Menu A les semaines impaires du programme, menu B les semaines paires.",
+ "repas": {
+  "petitDejeuner": {
+   "nom": "Petit-déjeuner",
+   "heure": "8h15",
+   "emoji": "☀️"
+  },
+  "dejeuner": {
+   "nom": "Déjeuner",
+   "heure": "12h15",
+   "emoji": "🍽️"
+  },
+  "collation": {
+   "nom": "Collation",
+   "heure": "16h30",
+   "emoji": "🍎"
+  },
+  "diner": {
+   "nom": "Dîner",
+   "heure": "19h30",
+   "emoji": "🌙"
+  }
+ },
+ "margeCalories": "Gardez environ 150 calories de marge pour le lait, le thé et l'huile de cuisson.",
+ "noteChiffres": "Calories et protéines par repas : estimations à partir de tables nutritionnelles courantes (Ciqual), à titre indicatif.",
+ "menuA": {
+  "nom": "Menu A",
+  "jours": {
+   "lundi": {
+    "petitDejeuner": {
+     "texte": "Yaourt très riche en protéines (type skyr) 200 g, 30 g de flocons d'avoine, fruits rouges, 1 c. à café de miel",
+     "calories": 340,
+     "proteines": 25,
+     "elements": [
+      "skyr",
+      "avoine",
+      "fruits_rouges",
+      "miel"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Poulet grillé citron-cumin 150 g, riz complet 120 g cuit, légumes rôtis (courgette, poivron)",
+     "calories": 520,
+     "proteines": 50,
+     "elements": [
+      "poulet",
+      "riz_complet",
+      "legumes_rotis"
+     ]
+    },
+    "collation": {
+     "texte": "Yaourt grec nature et 10 amandes",
+     "calories": 200,
+     "proteines": 9,
+     "elements": [
+      "yaourt_grec",
+      "amandes"
+     ]
+    },
+    "diner": {
+     "texte": "Omelette de 3 œufs aux épinards, salade verte, 1 petite tranche de pain complet",
+     "calories": 420,
+     "proteines": 25,
+     "elements": [
+      "oeuf",
+      "epinards",
+      "salade_verte",
+      "pain_complet"
+     ]
+    }
+   },
+   "mardi": {
+    "petitDejeuner": {
+     "texte": "2 œufs durs, 1 tranche de pain complet avec fromage frais léger, 1 orange",
+     "calories": 350,
+     "proteines": 20,
+     "elements": [
+      "oeuf",
+      "pain_complet",
+      "fromage_frais_leger",
+      "orange"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Saumon au four 130 g, patate douce 150 g, haricots verts",
+     "calories": 530,
+     "proteines": 30,
+     "elements": [
+      "saumon",
+      "patate_douce",
+      "haricots_verts"
+     ]
+    },
+    "collation": {
+     "texte": "Pomme et 2 portions de fromage léger",
+     "calories": 170,
+     "proteines": 8,
+     "elements": [
+      "pomme",
+      "fromage_portion_leger"
+     ]
+    },
+    "diner": {
+     "texte": "Soupe de légumes maison et 120 g de blanc de dinde grillé",
+     "calories": 360,
+     "proteines": 32,
+     "elements": [
+      "soupe_legumes",
+      "dinde"
+     ]
+    }
+   },
+   "mercredi": {
+    "petitDejeuner": {
+     "texte": "Bouillie d'avoine : 40 g de flocons d'avoine cuits dans 200 ml de lait demi-écrémé, 100 g de yaourt très riche en protéines (type skyr), ½ banane",
+     "calories": 370,
+     "proteines": 23,
+     "elements": [
+      "avoine",
+      "lait_demi",
+      "skyr",
+      "banane"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Salade complète : 150 g de lentilles cuites, 1 boîte de thon au naturel, tomate, concombre, oignon rouge, 30 g de féta, 1 c. à soupe d'huile d'olive",
+     "calories": 560,
+     "proteines": 45,
+     "elements": [
+      "lentilles",
+      "thon",
+      "tomate",
+      "concombre",
+      "feta",
+      "huile_olive"
+     ]
+    },
+    "collation": {
+     "texte": "Bâtonnets de carotte et concombre avec 2 c. à soupe de houmous, 1 yaourt nature",
+     "calories": 200,
+     "proteines": 8,
+     "elements": [
+      "carotte",
+      "concombre",
+      "houmous",
+      "yaourt_nature"
+     ]
+    },
+    "diner": {
+     "texte": "Crevettes sautées ail et persil 150 g, courgettes poêlées, 3 c. à soupe de quinoa",
+     "calories": 380,
+     "proteines": 32,
+     "elements": [
+      "crevettes",
+      "courgette",
+      "quinoa"
+     ]
+    }
+   },
+   "jeudi": {
+    "petitDejeuner": {
+     "texte": "1 tranche de pain complet, 1 œuf au plat, 1 portion de fromage, tomate, 1 kiwi",
+     "calories": 330,
+     "proteines": 16,
+     "elements": [
+      "pain_complet",
+      "oeuf",
+      "fromage_portion_leger",
+      "tomate",
+      "kiwi"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Tajine de poulet aux légumes (carottes, courgettes, petits pois) avec ¼ de pain maison",
+     "calories": 520,
+     "proteines": 40,
+     "elements": [
+      "tajine_poulet",
+      "pain_maison"
+     ]
+    },
+    "collation": {
+     "texte": "1 banane et 1 c. à soupe de beurre de cacahuète",
+     "calories": 200,
+     "proteines": 5,
+     "elements": [
+      "banane",
+      "beurre_cacahuete"
+     ]
+    },
+    "diner": {
+     "texte": "Poisson blanc en papillote (merlan ou cabillaud), légumes vapeur, 1 petite pomme de terre",
+     "calories": 380,
+     "proteines": 35,
+     "elements": [
+      "poisson_blanc",
+      "legumes_vapeur",
+      "pomme_de_terre"
+     ]
+    }
+   },
+   "vendredi": {
+    "petitDejeuner": {
+     "texte": "Yaourt très riche en protéines (type skyr) 200 g, 30 g de muesli sans sucre ajouté, 1 fruit",
+     "calories": 320,
+     "proteines": 24,
+     "elements": [
+      "skyr",
+      "muesli",
+      "pomme"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Bol complet : émincé de poulet ou de dinde, quinoa, ¼ d'avocat, maïs, crudités, sauce yaourt-citron",
+     "calories": 560,
+     "proteines": 42,
+     "elements": [
+      "poulet",
+      "quinoa",
+      "avocat",
+      "mais",
+      "crudites"
+     ]
+    },
+    "collation": {
+     "texte": "Yaourt grec et 1 fruit",
+     "calories": 190,
+     "proteines": 8,
+     "elements": [
+      "yaourt_grec",
+      "pomme"
+     ]
+    },
+    "diner": {
+     "texte": "Soupe de lentilles et pois chiches façon harira légère, 1 œuf dur",
+     "calories": 400,
+     "proteines": 22,
+     "elements": [
+      "harira",
+      "oeuf"
+     ]
+    }
+   }
+  },
+  "cuisineDuDimanche": [
+   "🍚 Cuire riz complet et quinoa (environ 4 portions)",
+   "🍗 Griller 600 g de poulet mariné citron, ail et cumin",
+   "🥕 Rôtir une plaque de légumes (courgettes, poivrons, oignons, carottes)",
+   "🥚 Cuire 6 œufs durs",
+   "🍲 Préparer une grande marmite de soupe de légumes (3 dîners)",
+   "🥗 Laver la salade, couper concombre et carottes en bâtonnets"
+  ]
+ },
+ "menuB": {
+  "nom": "Menu B",
+  "jours": {
+   "lundi": {
+    "petitDejeuner": {
+     "texte": "2 œufs brouillés, 1 tranche de pain complet, 1 orange",
+     "calories": 330,
+     "proteines": 17,
+     "elements": [
+      "oeuf",
+      "pain_complet",
+      "orange"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Kefta de bœuf maigre 130 g, boulgour 120 g cuit, salade tomate-concombre",
+     "calories": 540,
+     "proteines": 36,
+     "elements": [
+      "kefta",
+      "boulgour",
+      "tomate",
+      "concombre"
+     ]
+    },
+    "collation": {
+     "texte": "Yaourt très riche en protéines (type skyr) et fruits rouges",
+     "calories": 150,
+     "proteines": 15,
+     "elements": [
+      "skyr",
+      "fruits_rouges"
+     ]
+    },
+    "diner": {
+     "texte": "Velouté de courgettes, 2 œufs durs, 30 g de féta",
+     "calories": 380,
+     "proteines": 22,
+     "elements": [
+      "veloute_courgettes",
+      "oeuf",
+      "feta"
+     ]
+    }
+   },
+   "mardi": {
+    "petitDejeuner": {
+     "texte": "Bouillie d'avoine : 40 g de flocons d'avoine, 200 ml de lait, 100 g de yaourt très riche en protéines (type skyr), ½ pomme",
+     "calories": 360,
+     "proteines": 23,
+     "elements": [
+      "avoine",
+      "lait_demi",
+      "skyr",
+      "pomme"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Dinde au curry 150 g, riz basmati 120 g cuit, brocolis",
+     "calories": 520,
+     "proteines": 48,
+     "elements": [
+      "dinde",
+      "riz_basmati",
+      "brocolis"
+     ]
+    },
+    "collation": {
+     "texte": "Pomme et 10 amandes",
+     "calories": 150,
+     "proteines": 3,
+     "elements": [
+      "pomme",
+      "amandes"
+     ]
+    },
+    "diner": {
+     "texte": "Salade thon, œuf dur, haricots verts, tomate, 1 c. à soupe d'huile d'olive",
+     "calories": 420,
+     "proteines": 35,
+     "elements": [
+      "thon",
+      "oeuf",
+      "haricots_verts",
+      "tomate",
+      "huile_olive"
+     ]
+    }
+   },
+   "mercredi": {
+    "petitDejeuner": {
+     "texte": "Yaourt très riche en protéines (type skyr) 200 g, 30 g de muesli sans sucre, 1 kiwi",
+     "calories": 320,
+     "proteines": 24,
+     "elements": [
+      "skyr",
+      "muesli",
+      "kiwi"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Pavé de saumon 130 g, quinoa 120 g cuit, épinards",
+     "calories": 530,
+     "proteines": 32,
+     "elements": [
+      "saumon",
+      "quinoa",
+      "epinards"
+     ]
+    },
+    "collation": {
+     "texte": "Crudités et 2 c. à soupe de houmous",
+     "calories": 140,
+     "proteines": 4,
+     "elements": [
+      "crudites",
+      "houmous"
+     ]
+    },
+    "diner": {
+     "texte": "Chorba légère au poulet, 1 yaourt nature",
+     "calories": 400,
+     "proteines": 30,
+     "elements": [
+      "chorba",
+      "yaourt_nature"
+     ]
+    }
+   },
+   "jeudi": {
+    "petitDejeuner": {
+     "texte": "Pain complet, fromage frais léger, 2 tranches de dinde, tomate",
+     "calories": 320,
+     "proteines": 22,
+     "elements": [
+      "pain_complet",
+      "fromage_frais_leger",
+      "dinde_tranches",
+      "tomate"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Tajine de merlan aux légumes, ¼ de pain",
+     "calories": 500,
+     "proteines": 35,
+     "elements": [
+      "tajine_poisson",
+      "pain_maison"
+     ]
+    },
+    "collation": {
+     "texte": "Banane et 1 c. à soupe de beurre de cacahuète",
+     "calories": 200,
+     "proteines": 5,
+     "elements": [
+      "banane",
+      "beurre_cacahuete"
+     ]
+    },
+    "diner": {
+     "texte": "Omelette de 3 œufs aux champignons, salade verte",
+     "calories": 380,
+     "proteines": 24,
+     "elements": [
+      "oeuf",
+      "champignons",
+      "salade_verte"
+     ]
+    }
+   },
+   "vendredi": {
+    "petitDejeuner": {
+     "texte": "Yaourt grec, 30 g de flocons d'avoine, ½ banane, cannelle",
+     "calories": 330,
+     "proteines": 14,
+     "elements": [
+      "yaourt_grec",
+      "avoine",
+      "banane"
+     ]
+    },
+    "dejeuner": {
+     "texte": "Galette roulée garnie : galette complète, poulet, crudités, sauce yaourt-citron",
+     "calories": 520,
+     "proteines": 40,
+     "elements": [
+      "galette_complete",
+      "poulet",
+      "crudites"
+     ]
+    },
+    "collation": {
+     "texte": "2 portions de fromage léger et 1 pomme",
+     "calories": 170,
+     "proteines": 8,
+     "elements": [
+      "fromage_portion_leger",
+      "pomme"
+     ]
+    },
+    "diner": {
+     "texte": "Purée de lentilles corail épicée (version légère), 1 œuf dur, salade",
+     "calories": 420,
+     "proteines": 24,
+     "elements": [
+      "dhal",
+      "oeuf",
+      "salade_verte"
+     ]
+    }
+   }
+  },
+  "cuisineDuDimanche": [
+   "🍚 Cuire boulgour et riz basmati",
+   "🍗 Préparer la dinde au curry et les kefta",
+   "🥕 Rôtir une plaque de légumes",
+   "🥚 Cuire 6 œufs durs",
+   "🥣 Préparer un velouté de courgettes",
+   "🥗 Laver la salade et préparer les crudités"
+  ]
+ },
+ "weekEnd": {
+  "petitDejeuner": {
+   "texte": "Petit-déjeuner maison protéiné, comme en semaine",
+   "calories": 350,
+   "proteines": 22
+  },
+  "dejeuner": {
+   "texte": "1 repas au restaurant (voir les bons choix et les pièges)",
+   "calories": 800,
+   "proteines": 40
+  },
+  "collation": {
+   "texte": "Selon la faim : yaourt ou fruit",
+   "calories": 100,
+   "proteines": 4
+  },
+  "diner": {
+   "texte": "Repas léger : soupe de légumes et omelette, ou grande salade avec thon et œufs",
+   "calories": 420,
+   "proteines": 28
+  }
+ },
+ "cuisineDuDimanche": {
+  "titre": "Cuisine du dimanche (1 heure)",
+  "intro": "Une heure de préparation le dimanche permet de manger sainement toute la semaine sans y penser.",
+  "conservation": "Conservez le tout dans des boîtes hermétiques. Le poulet cuit se garde 3 à 4 jours au réfrigérateur ; pour le vendredi, mettez-en une partie au congélateur."
+ },
+ "restaurant": {
+  "regleOr": "Une seule gourmandise par repas, à choisir entre l'entrée, le pain et le dessert.",
+  "boissons": "Eau, eau pétillante citronnée, thé à la menthe peu sucré, soda zéro ou cocktail sans alcool non sucré. Les jus et smoothies de fruits sont très caloriques : un verre en guise de dessert, pas en plus.",
+  "bonsChoix": [
+   "🍢 Grillades : brochettes de poulet, de bœuf ou kefta, poisson grillé, avec salade ou légumes",
+   "🥘 Tajine : la sauce et les légumes oui, le pain avec modération",
+   "🍣 Sushis et sashimis : évitez les versions frites et les sauces mayonnaise",
+   "🍕 Pizza : partagez-la et ajoutez une salade",
+   "🍔 Burger : remplacez les frites par une salade"
+  ],
+  "pieges": [
+   "🥓 Lardons, jambon ou chorizo dans les salades (César, savoyarde), quiches, pâtes carbonara et pizzas",
+   "🍮 La gélatine, souvent d'origine porcine, dans la panna cotta, les bavarois, certains desserts glacés et les bonbons",
+   "🍷 Les plats cuisinés au vin ou flambés : bœuf bourguignon, coq au vin, sauces au vin blanc ou au cognac, tiramisu (souvent au marsala), babas au rhum",
+   "💡 En cas de doute, demandez au serveur. C'est une question tout à fait courante."
+  ],
+  "estimations": {
+   "leger": 600,
+   "normal": 850,
+   "copieux": 1200
+  }
+ },
+ "conseilsNutrition": {
+  "1": "🛒 Faites les courses et préparez riz, poulet et œufs durs : votre semaine sera simple.",
+  "2": "🥩 Une protéine à chaque repas : c'est elle qui coupe la faim et protège vos muscles.",
+  "3": "💧 Glissez une grande bouteille d'eau dans votre sac de sport : visez 2,5 L les jours d'entraînement."
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "version": 1,
+ "intro": "Chaque groupe contient des aliments interchangeables, à quantités à peu près équivalentes.",
+ "groupes": [
+  {
+   "id": "proteine",
+   "nom": "🥩 Protéine",
+   "equivalents": [
+    {
+     "aliment": "poulet",
+     "quantite": "150 g"
+    },
+    {
+     "aliment": "dinde",
+     "quantite": "150 g"
+    },
+    {
+     "aliment": "saumon",
+     "quantite": "130 g"
+    },
+    {
+     "aliment": "poisson_blanc",
+     "quantite": "180 g"
+    },
+    {
+     "aliment": "crevettes",
+     "quantite": "150 g"
+    },
+    {
+     "aliment": "oeuf",
+     "quantite": "3 œufs"
+    },
+    {
+     "aliment": "kefta",
+     "quantite": "130 g"
+    },
+    {
+     "aliment": "thon",
+     "quantite": "1 boîte"
+    }
+   ]
+  },
+  {
+   "id": "feculent",
+   "nom": "🌾 Féculent",
+   "equivalents": [
+    {
+     "aliment": "riz_complet",
+     "quantite": "120 g cuit"
+    },
+    {
+     "aliment": "riz_basmati",
+     "quantite": "120 g cuit"
+    },
+    {
+     "aliment": "quinoa",
+     "quantite": "120 g cuit"
+    },
+    {
+     "aliment": "boulgour",
+     "quantite": "120 g cuit"
+    },
+    {
+     "aliment": "patate_douce",
+     "quantite": "150 g"
+    },
+    {
+     "aliment": "lentilles",
+     "quantite": "150 g cuites"
+    },
+    {
+     "aliment": "pain_complet",
+     "quantite": "60 g"
+    },
+    {
+     "aliment": "pain_maison",
+     "quantite": "¼ de pain"
+    }
+   ]
+  },
+  {
+   "id": "petit_dejeuner_proteine",
+   "nom": "☀️ Base du petit-déjeuner",
+   "equivalents": [
+    {
+     "aliment": "skyr",
+     "quantite": "200 g"
+    },
+    {
+     "aliment": "fromage_blanc",
+     "quantite": "200 g"
+    },
+    {
+     "aliment": "oeuf",
+     "quantite": "2 œufs"
+    },
+    {
+     "aliment": "yaourt_grec",
+     "quantite": "150 g"
+    }
+   ]
+  },
+  {
+   "id": "collation",
+   "nom": "🍎 Collation",
+   "equivalents": [
+    {
+     "texte": "Yaourt grec et 10 amandes"
+    },
+    {
+     "texte": "Pomme et 2 portions de fromage léger"
+    },
+    {
+     "texte": "Banane et 1 c. à soupe de beurre de cacahuète"
+    },
+    {
+     "texte": "Crudités et 2 c. à soupe de houmous"
+    },
+    {
+     "texte": "Yaourt très riche en protéines (type skyr) et fruits rouges"
+    }
+   ]
+  },
+  {
+   "id": "fruit",
+   "nom": "🍊 Fruit",
+   "equivalents": [
+    {
+     "aliment": "pomme",
+     "quantite": "1"
+    },
+    {
+     "aliment": "orange",
+     "quantite": "1"
+    },
+    {
+     "aliment": "kiwi",
+     "quantite": "2"
+    },
+    {
+     "aliment": "mandarine",
+     "quantite": "2"
+    },
+    {
+     "aliment": "fruits_rouges",
+     "quantite": "150 g"
+    },
+    {
+     "aliment": "banane",
+     "quantite": "½ grande"
+    }
+   ]
+  },
+  {
+   "id": "legume",
+   "nom": "🥦 Légume",
+   "equivalents": [
+    {
+     "aliment": "haricots_verts",
+     "quantite": "150 g"
+    },
+    {
+     "aliment": "brocolis",
+     "quantite": "150 g"
+    },
+    {
+     "aliment": "courgette",
+     "quantite": "200 g"
+    },
+    {
+     "aliment": "epinards",
+     "quantite": "150 g"
+    },
+    {
+     "aliment": "legumes_rotis",
+     "quantite": "200 g"
+    },
+    {
+     "aliment": "zaalouk",
+     "quantite": "1 bol"
+    }
+   ]
+  }
+ ]
+}

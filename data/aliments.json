@@ -1,0 +1,943 @@
+{
+ "version": 1,
+ "source": "Valeurs estimées à partir de la table Ciqual (Anses) et d'étiquettes courantes, arrondies, à titre indicatif.",
+ "rayons": [
+  "Viandes et poissons",
+  "Produits laitiers et œufs",
+  "Féculents et pain",
+  "Fruits et légumes",
+  "Épicerie",
+  "Plats marocains et préparés",
+  "Boissons"
+ ],
+ "aliments": [
+  {
+   "id": "poulet",
+   "nom": "Blanc de poulet grillé",
+   "portion": "150 g",
+   "calories": 210,
+   "proteines": 46,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "dinde",
+   "nom": "Blanc de dinde grillé",
+   "portion": "150 g",
+   "calories": 195,
+   "proteines": 44,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "dinde_tranches",
+   "nom": "Tranches de blanc de dinde",
+   "portion": "2 tranches (40 g)",
+   "calories": 45,
+   "proteines": 8,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "kefta",
+   "nom": "Kefta de bœuf maigre",
+   "portion": "130 g",
+   "calories": 270,
+   "proteines": 30,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "boeuf_hache_5",
+   "nom": "Bœuf haché 5 %",
+   "portion": "125 g",
+   "calories": 160,
+   "proteines": 26,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "steak",
+   "nom": "Steak de bœuf maigre",
+   "portion": "120 g",
+   "calories": 180,
+   "proteines": 30,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "agneau",
+   "nom": "Agneau maigre grillé",
+   "portion": "120 g",
+   "calories": 270,
+   "proteines": 30,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "foie_volaille",
+   "nom": "Foie de volaille",
+   "portion": "100 g",
+   "calories": 135,
+   "proteines": 20,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "brochettes_poulet",
+   "nom": "Brochettes de poulet",
+   "portion": "2 brochettes (150 g)",
+   "calories": 230,
+   "proteines": 40,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "saumon",
+   "nom": "Saumon au four",
+   "portion": "130 g",
+   "calories": 270,
+   "proteines": 28,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "poisson_blanc",
+   "nom": "Poisson blanc (merlan, cabillaud)",
+   "portion": "180 g",
+   "calories": 160,
+   "proteines": 34,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "sardines",
+   "nom": "Sardines grillées",
+   "portion": "4 sardines (120 g)",
+   "calories": 230,
+   "proteines": 28,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "sardines_boite",
+   "nom": "Sardines en boîte à l'huile égouttées",
+   "portion": "1 boîte (90 g)",
+   "calories": 190,
+   "proteines": 22,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "thon",
+   "nom": "Thon au naturel",
+   "portion": "1 boîte (110 g égouttée)",
+   "calories": 125,
+   "proteines": 28,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "crevettes",
+   "nom": "Crevettes",
+   "portion": "150 g",
+   "calories": 140,
+   "proteines": 30,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "calamars",
+   "nom": "Calamars grillés",
+   "portion": "150 g",
+   "calories": 140,
+   "proteines": 25,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "dorade",
+   "nom": "Dorade grillée",
+   "portion": "180 g",
+   "calories": 210,
+   "proteines": 36,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "merlan_frit",
+   "nom": "Poisson frit (friture)",
+   "portion": "150 g",
+   "calories": 330,
+   "proteines": 26,
+   "rayon": "Viandes et poissons"
+  },
+  {
+   "id": "oeuf",
+   "nom": "Œuf",
+   "portion": "1 œuf",
+   "calories": 75,
+   "proteines": 6.5,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "blanc_oeuf",
+   "nom": "Blanc d'œuf",
+   "portion": "1 blanc",
+   "calories": 17,
+   "proteines": 3.6,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "skyr",
+   "nom": "Yaourt très riche en protéines (type skyr)",
+   "portion": "200 g",
+   "calories": 130,
+   "proteines": 22,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "yaourt_grec",
+   "nom": "Yaourt grec nature",
+   "portion": "150 g",
+   "calories": 150,
+   "proteines": 9,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "yaourt_nature",
+   "nom": "Yaourt nature",
+   "portion": "1 pot (125 g)",
+   "calories": 60,
+   "proteines": 5,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "fromage_blanc",
+   "nom": "Fromage blanc 0 %",
+   "portion": "200 g",
+   "calories": 100,
+   "proteines": 15,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "lben",
+   "nom": "Lben (lait fermenté)",
+   "portion": "1 verre (250 ml)",
+   "calories": 110,
+   "proteines": 8,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "raib",
+   "nom": "Raïbi",
+   "portion": "1 pot (110 g)",
+   "calories": 110,
+   "proteines": 4,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "lait_demi",
+   "nom": "Lait demi-écrémé",
+   "portion": "200 ml",
+   "calories": 92,
+   "proteines": 6.5,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "fromage_frais_leger",
+   "nom": "Fromage frais léger",
+   "portion": "30 g",
+   "calories": 40,
+   "proteines": 2.5,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "fromage_portion_leger",
+   "nom": "Portion de fromage léger",
+   "portion": "1 portion",
+   "calories": 35,
+   "proteines": 2.5,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "feta",
+   "nom": "Féta",
+   "portion": "30 g",
+   "calories": 80,
+   "proteines": 4.5,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "jben",
+   "nom": "Jben (fromage frais marocain)",
+   "portion": "50 g",
+   "calories": 90,
+   "proteines": 5,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "mozzarella",
+   "nom": "Mozzarella",
+   "portion": "50 g",
+   "calories": 125,
+   "proteines": 9,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "emmental",
+   "nom": "Emmental",
+   "portion": "30 g",
+   "calories": 115,
+   "proteines": 8.5,
+   "rayon": "Produits laitiers et œufs"
+  },
+  {
+   "id": "riz_complet",
+   "nom": "Riz complet cuit",
+   "portion": "120 g",
+   "calories": 180,
+   "proteines": 4,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "riz_basmati",
+   "nom": "Riz basmati cuit",
+   "portion": "120 g",
+   "calories": 170,
+   "proteines": 3.5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "quinoa",
+   "nom": "Quinoa cuit",
+   "portion": "120 g",
+   "calories": 145,
+   "proteines": 5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "boulgour",
+   "nom": "Boulgour cuit",
+   "portion": "120 g",
+   "calories": 135,
+   "proteines": 4.5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "couscous",
+   "nom": "Couscous cuit",
+   "portion": "150 g",
+   "calories": 170,
+   "proteines": 6,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "pates",
+   "nom": "Pâtes complètes cuites",
+   "portion": "150 g",
+   "calories": 190,
+   "proteines": 7,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "lentilles",
+   "nom": "Lentilles cuites",
+   "portion": "150 g",
+   "calories": 170,
+   "proteines": 13,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "pois_chiches",
+   "nom": "Pois chiches cuits",
+   "portion": "150 g",
+   "calories": 210,
+   "proteines": 11,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "haricots_blancs",
+   "nom": "Haricots blancs cuits",
+   "portion": "150 g",
+   "calories": 160,
+   "proteines": 10,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "feves",
+   "nom": "Fèves cuites",
+   "portion": "150 g",
+   "calories": 165,
+   "proteines": 12,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "patate_douce",
+   "nom": "Patate douce",
+   "portion": "150 g",
+   "calories": 130,
+   "proteines": 2,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "pomme_de_terre",
+   "nom": "Pomme de terre vapeur",
+   "portion": "1 petite (120 g)",
+   "calories": 95,
+   "proteines": 2.5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "pain_complet",
+   "nom": "Pain complet",
+   "portion": "1 tranche (40 g)",
+   "calories": 95,
+   "proteines": 3.5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "pain_maison",
+   "nom": "Pain maison (khobz)",
+   "portion": "¼ de pain (60 g)",
+   "calories": 160,
+   "proteines": 5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "pain_orge",
+   "nom": "Pain d'orge",
+   "portion": "¼ de pain (60 g)",
+   "calories": 145,
+   "proteines": 4.5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "galette_complete",
+   "nom": "Galette de blé complète",
+   "portion": "1 galette (60 g)",
+   "calories": 180,
+   "proteines": 5.5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "avoine",
+   "nom": "Flocons d'avoine",
+   "portion": "30 g",
+   "calories": 110,
+   "proteines": 4,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "muesli",
+   "nom": "Muesli sans sucre ajouté",
+   "portion": "30 g",
+   "calories": 110,
+   "proteines": 3,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "msemen",
+   "nom": "Msemen",
+   "portion": "1 pièce (80 g)",
+   "calories": 280,
+   "proteines": 6,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "baghrir",
+   "nom": "Baghrir",
+   "portion": "1 pièce (60 g)",
+   "calories": 120,
+   "proteines": 3.5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "harcha",
+   "nom": "Harcha",
+   "portion": "1 pièce (60 g)",
+   "calories": 230,
+   "proteines": 4.5,
+   "rayon": "Féculents et pain"
+  },
+  {
+   "id": "tomate",
+   "nom": "Tomate",
+   "portion": "1 tomate (120 g)",
+   "calories": 22,
+   "proteines": 1,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "concombre",
+   "nom": "Concombre",
+   "portion": "½ concombre (150 g)",
+   "calories": 20,
+   "proteines": 1,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "carotte",
+   "nom": "Carotte",
+   "portion": "1 carotte (100 g)",
+   "calories": 35,
+   "proteines": 0.8,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "courgette",
+   "nom": "Courgette",
+   "portion": "200 g",
+   "calories": 35,
+   "proteines": 2.5,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "poivron",
+   "nom": "Poivron",
+   "portion": "1 poivron (150 g)",
+   "calories": 40,
+   "proteines": 1.5,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "aubergine",
+   "nom": "Aubergine",
+   "portion": "200 g",
+   "calories": 40,
+   "proteines": 2,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "epinards",
+   "nom": "Épinards",
+   "portion": "150 g",
+   "calories": 35,
+   "proteines": 4,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "haricots_verts",
+   "nom": "Haricots verts",
+   "portion": "150 g",
+   "calories": 45,
+   "proteines": 2.5,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "brocolis",
+   "nom": "Brocolis",
+   "portion": "150 g",
+   "calories": 50,
+   "proteines": 4,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "champignons",
+   "nom": "Champignons",
+   "portion": "150 g",
+   "calories": 35,
+   "proteines": 4.5,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "salade_verte",
+   "nom": "Salade verte",
+   "portion": "1 bol",
+   "calories": 15,
+   "proteines": 1,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "oignon",
+   "nom": "Oignon",
+   "portion": "1 oignon (100 g)",
+   "calories": 40,
+   "proteines": 1,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "legumes_rotis",
+   "nom": "Légumes rôtis au four",
+   "portion": "200 g",
+   "calories": 120,
+   "proteines": 3,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "legumes_vapeur",
+   "nom": "Légumes vapeur",
+   "portion": "200 g",
+   "calories": 70,
+   "proteines": 3,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "crudites",
+   "nom": "Crudités variées",
+   "portion": "1 bol (150 g)",
+   "calories": 35,
+   "proteines": 1.5,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "avocat",
+   "nom": "Avocat",
+   "portion": "¼ d'avocat (40 g)",
+   "calories": 65,
+   "proteines": 0.8,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "mais",
+   "nom": "Maïs",
+   "portion": "3 c. à soupe (60 g)",
+   "calories": 60,
+   "proteines": 2,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "pomme",
+   "nom": "Pomme",
+   "portion": "1 pomme",
+   "calories": 80,
+   "proteines": 0.4,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "orange",
+   "nom": "Orange",
+   "portion": "1 orange",
+   "calories": 70,
+   "proteines": 1.3,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "banane",
+   "nom": "Banane",
+   "portion": "1 banane",
+   "calories": 105,
+   "proteines": 1.3,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "kiwi",
+   "nom": "Kiwi",
+   "portion": "1 kiwi",
+   "calories": 45,
+   "proteines": 0.8,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "fruits_rouges",
+   "nom": "Fruits rouges",
+   "portion": "100 g",
+   "calories": 45,
+   "proteines": 1,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "dattes",
+   "nom": "Dattes",
+   "portion": "3 dattes",
+   "calories": 70,
+   "proteines": 0.6,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "figues",
+   "nom": "Figues",
+   "portion": "2 figues",
+   "calories": 75,
+   "proteines": 0.8,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "grenade",
+   "nom": "Grenade",
+   "portion": "½ grenade",
+   "calories": 70,
+   "proteines": 1.5,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "mandarine",
+   "nom": "Clémentine",
+   "portion": "2 clémentines",
+   "calories": 70,
+   "proteines": 1.2,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "pasteque",
+   "nom": "Pastèque",
+   "portion": "1 tranche (300 g)",
+   "calories": 90,
+   "proteines": 1.8,
+   "rayon": "Fruits et légumes"
+  },
+  {
+   "id": "amandes",
+   "nom": "Amandes",
+   "portion": "10 amandes",
+   "calories": 70,
+   "proteines": 2.5,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "noix",
+   "nom": "Noix",
+   "portion": "5 noix",
+   "calories": 130,
+   "proteines": 3,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "cacahuetes",
+   "nom": "Cacahuètes",
+   "portion": "20 g",
+   "calories": 115,
+   "proteines": 5,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "beurre_cacahuete",
+   "nom": "Beurre de cacahuète",
+   "portion": "1 c. à soupe (15 g)",
+   "calories": 95,
+   "proteines": 4,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "houmous",
+   "nom": "Houmous",
+   "portion": "2 c. à soupe (40 g)",
+   "calories": 100,
+   "proteines": 3,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "huile_olive",
+   "nom": "Huile d'olive",
+   "portion": "1 c. à soupe",
+   "calories": 90,
+   "proteines": 0,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "miel",
+   "nom": "Miel",
+   "portion": "1 c. à café",
+   "calories": 25,
+   "proteines": 0,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "amlou",
+   "nom": "Amlou",
+   "portion": "1 c. à soupe (20 g)",
+   "calories": 120,
+   "proteines": 3,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "olives",
+   "nom": "Olives",
+   "portion": "10 olives",
+   "calories": 50,
+   "proteines": 0.3,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "sucre",
+   "nom": "Sucre",
+   "portion": "1 morceau",
+   "calories": 20,
+   "proteines": 0,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "chocolat_noir",
+   "nom": "Chocolat noir 70 %",
+   "portion": "2 carrés (20 g)",
+   "calories": 115,
+   "proteines": 1.5,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "whey",
+   "nom": "Poudre de protéines",
+   "portion": "1 dose (30 g)",
+   "calories": 115,
+   "proteines": 24,
+   "rayon": "Épicerie"
+  },
+  {
+   "id": "tajine_poulet",
+   "nom": "Tajine de poulet aux légumes",
+   "portion": "1 assiette (350 g)",
+   "calories": 360,
+   "proteines": 35,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "tajine_poisson",
+   "nom": "Tajine de poisson aux légumes",
+   "portion": "1 assiette (350 g)",
+   "calories": 340,
+   "proteines": 33,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "tajine_kefta",
+   "nom": "Tajine de kefta aux œufs",
+   "portion": "1 assiette (300 g)",
+   "calories": 450,
+   "proteines": 32,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "harira",
+   "nom": "Harira légère",
+   "portion": "1 bol (300 ml)",
+   "calories": 230,
+   "proteines": 10,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "chorba",
+   "nom": "Chorba légère au poulet",
+   "portion": "1 bol (350 ml)",
+   "calories": 250,
+   "proteines": 20,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "bissara",
+   "nom": "Bissara",
+   "portion": "1 bol (300 ml)",
+   "calories": 280,
+   "proteines": 15,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "soupe_legumes",
+   "nom": "Soupe de légumes maison",
+   "portion": "1 bol (300 ml)",
+   "calories": 90,
+   "proteines": 3,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "veloute_courgettes",
+   "nom": "Velouté de courgettes",
+   "portion": "1 bol (300 ml)",
+   "calories": 100,
+   "proteines": 3,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "dhal",
+   "nom": "Purée de lentilles corail épicée",
+   "portion": "1 bol (250 g)",
+   "calories": 270,
+   "proteines": 15,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "couscous_legumes",
+   "nom": "Couscous aux légumes et poulet",
+   "portion": "1 assiette (400 g)",
+   "calories": 620,
+   "proteines": 35,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "pastilla",
+   "nom": "Pastilla au poulet",
+   "portion": "1 part (150 g)",
+   "calories": 450,
+   "proteines": 20,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "zaalouk",
+   "nom": "Zaalouk",
+   "portion": "1 bol (150 g)",
+   "calories": 110,
+   "proteines": 2,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "taktouka",
+   "nom": "Taktouka",
+   "portion": "1 bol (150 g)",
+   "calories": 100,
+   "proteines": 2,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "loubia",
+   "nom": "Loubia (haricots blancs en sauce)",
+   "portion": "1 bol (250 g)",
+   "calories": 300,
+   "proteines": 15,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "rfissa",
+   "nom": "Rfissa",
+   "portion": "1 assiette (350 g)",
+   "calories": 650,
+   "proteines": 35,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "pizza",
+   "nom": "Pizza (2 parts)",
+   "portion": "2 parts",
+   "calories": 520,
+   "proteines": 22,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "burger",
+   "nom": "Burger sans frites",
+   "portion": "1 burger",
+   "calories": 500,
+   "proteines": 27,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "sushis",
+   "nom": "Sushis et makis",
+   "portion": "8 pièces",
+   "calories": 350,
+   "proteines": 14,
+   "rayon": "Plats marocains et préparés"
+  },
+  {
+   "id": "the_menthe",
+   "nom": "Thé à la menthe peu sucré",
+   "portion": "1 verre",
+   "calories": 30,
+   "proteines": 0,
+   "rayon": "Boissons"
+  },
+  {
+   "id": "jus_orange",
+   "nom": "Jus d'orange",
+   "portion": "1 verre (200 ml)",
+   "calories": 90,
+   "proteines": 1.4,
+   "rayon": "Boissons"
+  },
+  {
+   "id": "soda_zero",
+   "nom": "Soda zéro",
+   "portion": "1 canette",
+   "calories": 1,
+   "proteines": 0,
+   "rayon": "Boissons"
+  },
+  {
+   "id": "cafe_lait",
+   "nom": "Café au lait sans sucre",
+   "portion": "1 tasse",
+   "calories": 45,
+   "proteines": 3,
+   "rayon": "Boissons"
+  },
+  {
+   "id": "smoothie",
+   "nom": "Smoothie de fruits",
+   "portion": "1 verre (250 ml)",
+   "calories": 150,
+   "proteines": 2,
+   "rayon": "Boissons"
+  }
+ ]
+}
