@@ -2,6 +2,7 @@
 import { donnees } from "./donnees.js";
 import { infosDuJour, texteDate } from "./dates.js";
 import { formatDuree, nombre } from "./outils.js";
+import { exercicesSeance } from "./profil.js";
 
 // « 15 » → « 15 répétitions » ; « 12 par jambe » reste tel quel.
 export function texteReps(reps) {
@@ -9,10 +10,19 @@ export function texteReps(reps) {
 }
 
 export function doseDetaillee(idExercice, idSeance, phase) {
+  const e = donnees.programme.exercices[idExercice];
   if (idSeance === "G") {
-    return { principal: phase.gainage.exercices[idExercice], secondaire: `${phase.gainage.tours} tours`, series: phase.gainage.tours };
+    const d = phase.gainage.exercices[idExercice] || "30 s";
+    return { principal: d, secondaire: `${phase.gainage.tours} tours`, series: phase.gainage.tours };
   }
-  const p = phase.musculation[idExercice];
+  let p = phase.musculation[idExercice];
+  if (!p) {
+    // Exercice de remplacement : même nombre de séries que l'exercice d'origine.
+    const c = exercicesSeance(idSeance).changements.find((x) => x.nouveau === idExercice);
+    const origine = c ? phase.musculation[c.ancien] : null;
+    const series = origine ? origine.series : 2;
+    p = { series, reps: e && e.mesure === "duree" ? "30 s" : "15" };
+  }
   return { principal: texteReps(p.reps), secondaire: `${p.series} série${p.series > 1 ? "s" : ""}`, series: p.series, court: `${p.series} × ${p.reps}` };
 }
 
@@ -50,12 +60,13 @@ export function contenuDuJour(date) {
       const s = p.seances[b.seance];
       bloc.seance = b.seance;
       bloc.cochable = false;
-      bloc.court = b.type === "gainage" ? `${phase.gainage.tours} tours de ${s.exercices.length} exercices` : `${s.exercices.length} exercices`;
-      bloc.exercices = s.exercices.map((id) => {
+      const liste = exercicesSeance(b.seance).exercices;
+      bloc.court = b.type === "gainage" ? `${phase.gainage.tours} tours de ${liste.length} exercices` : `${liste.length} exercices`;
+      bloc.exercices = liste.map((id) => {
         const e = p.exercices[id];
         return { id, nom: e.nom, emoji: e.emoji, explication: e.explication, repos: e.reposSecondes, dose: doseDetaillee(id, b.seance, phase) };
       });
-      if (b.type === "gainage") bloc.lignes.push(`Enchaîner les ${s.exercices.length} exercices, puis recommencer : ${phase.gainage.tours} tours.`);
+      if (b.type === "gainage") bloc.lignes.push(`Enchaîner les ${liste.length} exercices, puis recommencer : ${phase.gainage.tours} tours.`);
     } else if (b.type === "intervalles") {
       const d = detailIntervalles(phase); bloc.court = d.court; bloc.lignes = d.lignes;
     } else if (b.type === "pente_continue") {
@@ -87,4 +98,20 @@ export function elementsACocher(contenu) {
     else if (b.cochable) liste.push(b.id);
   }
   return liste;
+}
+
+// Conseils pour ajuster les menus du programme aux objectifs personnels.
+export function ajustementRepas(totalCalories, totalProteines, cible) {
+  const marge = 150;
+  const conseils = [];
+  const ecartCal = cible.calories - (totalCalories + marge);
+  if (ecartCal >= 150) {
+    conseils.push(`🔼 Il vous manque environ ${nombre(Math.round(ecartCal / 50) * 50)} calories : ajoutez ${ecartCal >= 300 ? "une collation (yaourt grec et 10 amandes, ≈ 220 calories) et une portion de féculent au déjeuner (≈ 180 calories)" : "une collation (yaourt grec et 10 amandes, ≈ 220 calories)"}.`);
+  } else if (ecartCal <= -150) {
+    conseils.push(`🔽 Ce menu dépasse votre cible d'environ ${nombre(Math.round(-ecartCal / 50) * 50)} calories : prenez une demi-portion de féculent au dîner (≈ −90) et une seule cuillère d'huile par jour (≈ −90).`);
+  }
+  const ecartProt = cible.proteines - totalProteines;
+  if (ecartProt >= 15) conseils.push(`🥩 Il manque environ ${Math.round(ecartProt)} g de protéines : ajoutez un yaourt très riche en protéines (type skyr, 200 g ≈ 22 g de protéines, 130 calories) en collation.`);
+  else if (ecartProt >= 6) conseils.push(`🥩 Il manque environ ${Math.round(ecartProt)} g de protéines : ajoutez 1 œuf dur ou un yaourt grec (≈ 7 à 9 g).`);
+  return conseils;
 }

@@ -1,6 +1,7 @@
 // Point d'entrée : charge les données et gère la navigation entre les onglets.
 import { chargerDonnees } from "./donnees.js";
 import { demanderStockagePersistant } from "./stockage.js";
+import { chargerProfil } from "./profil.js";
 import * as aujourdhui from "./ecrans/aujourdhui.js";
 import * as seance from "./ecrans/seance.js";
 import * as repas from "./ecrans/repas.js";
@@ -43,6 +44,7 @@ function aller(adresse) {
 async function demarrer() {
   try {
     await chargerDonnees();
+    await chargerProfil();
   } catch (erreur) {
     conteneur.innerHTML = `<div class="carte"><h2>Impossible de charger le programme</h2><p class="sous-texte">${String(erreur.message || erreur)}</p></div>`;
     return;

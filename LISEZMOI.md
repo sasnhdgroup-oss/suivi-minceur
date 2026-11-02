@@ -26,6 +26,7 @@ Tout le contenu est dans le dossier `data/` :
 | `data/equivalences.json` | Remplacements d'un aliment par un autre |
 | `data/motivation.json` | Phrases de motivation (une différente chaque jour) |
 | `data/mouvements.json` | Positions des silhouettes animées de chaque exercice |
+| `data/personnalisation.json` | Règles de personnalisation : objectifs, rythme, niveau, gênes et exercices de remplacement |
 
 Exemples :
 - **Changer un repas** : dans `data/menus.json`, chercher le jour (par exemple `"mardi"` dans `"menuA"`) et modifier le texte, les calories et les protéines.
@@ -37,6 +38,11 @@ Sur GitHub, ouvrir le fichier, cliquer sur le crayon (« Edit »), modifier, pui
 ## Tester une autre date
 
 Ajouter `?date=2026-11-10` à la fin de l'adresse pour voir l'application comme si l'on était ce jour-là.
+
+## Personnalisation
+
+Dans « Mon profil » (icône en haut à droite) : prénom, âge, taille, poids, poids visé, objectif principal (perdre du poids, tonifier, prendre du muscle, garder la forme), rythme, niveau et gênes (genoux, dos, épaules, poignets).
+L'application calcule un plan (calories, protéines, eau, date d'arrivée estimée) à valider, puis adapte les séries, le gainage, le cardio et remplace les exercices déconseillés. Tous les 5 kg perdus, elle propose un nouveau plan.
 
 ## Données personnelles
 

@@ -1,5 +1,6 @@
 // Petites fonctions communes à tous les écrans.
 import { donnees } from "./donnees.js";
+import { exercicesSeance } from "./profil.js";
 
 export function echapper(texte) {
   return String(texte ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -32,8 +33,7 @@ export function detailBloc(bloc, phase) {
     case "gainage": return `${phase.gainage.tours} tours`;
     case "echauffement": return "10 min";
     case "musculation": {
-      const s = donnees.programme.seances[bloc.seance];
-      return `${s.exercices.length} exercices`;
+      return `${exercicesSeance(bloc.seance).exercices.length} exercices`;
     }
     default: return "";
   }

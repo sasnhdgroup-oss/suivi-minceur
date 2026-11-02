@@ -6,6 +6,7 @@ import { echapper } from "../outils.js";
 import { grilleExercices, brancherFiches, themeSeance } from "../composants.js";
 import { animerTout } from "../animations.js";
 import { lireSuivi, progression } from "../suivi.js";
+import { exercicesSeance, adapterPhase } from "../profil.js";
 
 export const titre = "Séance";
 
@@ -68,10 +69,10 @@ export async function rendu() {
 
 function toutesLesSeances(infos) {
   const p = donnees.programme;
-  const phase = infos.phase || p.phases[0];
+  const phase = infos.phase || adapterPhase(p.phases[0]);
   return ["A", "B", "C", "G"].map((id) => {
     const s = p.seances[id];
-    const bloc = { seance: id, exercices: s.exercices.map((ex) => ({ id: ex, nom: p.exercices[ex].nom, dose: doseDetaillee(ex, id, phase) })) };
+    const bloc = { seance: id, exercices: exercicesSeance(id).exercices.map((ex) => ({ id: ex, nom: p.exercices[ex].nom, dose: doseDetaillee(ex, id, phase) })) };
     return `
       <section class="carte carte-coloree theme-${themeSeance(id)}">
         <span class="puce-theme">${s.emoji} ${echapper(s.sousTitre)}</span>
@@ -83,7 +84,7 @@ function toutesLesSeances(infos) {
 
 export function activer(conteneur, { afficher }) {
   const infos = infosDuJour(aujourdhui());
-  const phase = infos.phase || donnees.programme.phases[0];
+  const phase = infos.phase || adapterPhase(donnees.programme.phases[0]);
   animerTout(conteneur);
   brancherFiches(conteneur, (id, seance) => doseDetaillee(id, seance, phase));
   conteneur.querySelectorAll("[data-aller]").forEach((b) => b.addEventListener("click", () => afficher(b.dataset.aller)));

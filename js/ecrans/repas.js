@@ -1,7 +1,8 @@
 // Onglet « Repas » : menus du jour et de la semaine.
 // Étape 1 : consultation. Cases « Mangé », remplacements et compteurs arrivent à l'étape 4.
 import { donnees } from "../donnees.js";
-import { aujourdhui, infosDuJour } from "../dates.js";
+import { aujourdhui, infosDuJour, objectifsDuJour } from "../dates.js";
+import { ajustementRepas } from "../journee.js";
 import { echapper, nombre } from "../outils.js";
 
 export const titre = "Repas";
@@ -46,6 +47,7 @@ export async function rendu() {
       <div class="repas-liste">${lignes}</div>
       <p class="sous-texte petit">Total estimé : ≈ ${nombre(totalCal)} calories et ${nombre(totalProt)} g de protéines. ${echapper(m.margeCalories)}</p>
     </section>
+    ${carteAjustement(jourChoisi, totalCal, totalProt, infos)}
 
     ${jourChoisi === "weekend" ? carteRestaurant(m.restaurant) : ""}
 
@@ -63,6 +65,18 @@ export async function rendu() {
       <span class="gros-emoji" aria-hidden="true">✅</span>
       <strong>Bientôt ici</strong>
       <span class="petit">Cases « Mangé », bouton « Remplacer », ajout d'un aliment, jauge des calories et liste de courses arrivent à l'étape 4.</span>
+    </section>`;
+}
+
+function carteAjustement(jourChoisi, totalCal, totalProt, infos) {
+  if (jourChoisi === "weekend" || infos.avantDebut) return "";
+  const cible = objectifsDuJour({ ...infos, estWeekEnd: false });
+  const conseils = ajustementRepas(totalCal, totalProt, cible);
+  return `
+    <section class="carte">
+      <h3>🎯 Adapté à mes objectifs</h3>
+      <p class="petit">Ma cible : ${nombre(cible.calories)} calories et ${cible.proteines} g de protéines${cible.valide ? "" : " (valeurs du programme : validez votre plan dans le profil)"}.</p>
+      ${conseils.length ? `<ul class="liste-simple petit">${conseils.map((c) => `<li>${echapper(c)}</li>`).join("")}</ul>` : `<p class="message-ok">✅ Ce menu correspond à vos objectifs.</p>`}
     </section>`;
 }
 

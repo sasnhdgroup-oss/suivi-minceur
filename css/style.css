@@ -402,3 +402,27 @@ button { font: inherit; color: inherit; }
 .jour-liste-etat { font-weight: 700; font-size: 14px; }
 .jour-liste-titre { font-weight: 700; font-size: 15px; }
 .theme-repos .accent-theme, .theme-aucun .accent-theme { color: var(--vert); }
+
+/* ---------- Profil et plan personnalisé ---------- */
+.bonjour { font-family: var(--titres); font-weight: 800; font-size: 22px; }
+.bandeau-message { background: var(--vert-fond); padding: 12px 14px; border-radius: var(--rayon-petit); }
+.choix-liste { display: flex; flex-direction: column; gap: 8px; }
+.choix-ligne { flex-direction: row; flex-wrap: wrap; }
+.choix-ligne .choix { flex: 1 1 140px; }
+.choix {
+  position: relative; display: flex; flex-direction: column; gap: 2px; cursor: pointer;
+  border: 2px solid var(--bordure); border-radius: 14px; padding: 12px 14px; min-height: var(--cible);
+  background: var(--surface);
+}
+.choix input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.choix.choisi { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 9%, var(--surface)); }
+.choix:has(input:focus-visible) { outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+.choix-titre { font-weight: 700; }
+.choix-texte { font-size: 14px; color: var(--texte-doux); }
+.tableau-plan { width: 100%; border-collapse: collapse; }
+.tableau-plan th, .tableau-plan td { padding: 9px 0; border-top: 1px solid var(--bordure); text-align: left; vertical-align: top; }
+.tableau-plan tr:first-child th, .tableau-plan tr:first-child td { border-top: 0; }
+.tableau-plan th { font-weight: 600; font-size: 15px; padding-right: 10px; }
+.tableau-plan td { font-family: var(--titres); font-weight: 800; font-size: 18px; text-align: right; }
+.calcul summary { cursor: pointer; font-weight: 700; color: var(--accent-fonce); min-height: 44px; display: flex; align-items: center; }
+#formulaire-profil h2 { margin-top: 8px; }

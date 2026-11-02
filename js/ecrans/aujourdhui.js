@@ -1,20 +1,21 @@
 // Onglet « Aujourd'hui » : date, semaine, phase, séance et repas du jour.
 // Étape 1 : lecture seule. Les anneaux et les cases à cocher arrivent à l'étape 2.
 import { donnees } from "../donnees.js";
-import { aujourdhui, infosDuJour, dateLongue, caloriesDuJour, texteDate } from "../dates.js";
+import { aujourdhui, infosDuJour, dateLongue, objectifsDuJour, texteDate } from "../dates.js";
 import { echapper, detailBloc, phraseDuJour, nombre } from "../outils.js";
-import { lire } from "../stockage.js";
+import { profil as profilActuel, profilComplet, planActif, palierAtteint, poidsActuel, objectifDe } from "../profil.js";
 
 export const titre = "Aujourd'hui";
 
 export async function rendu() {
   const date = aujourdhui();
   const infos = infosDuJour(date);
-  const profil = (await lire("profil")) || null;
+  const profil = profilActuel();
   const p = donnees.programme;
+  const bonjour = profil.prenom ? `<p class="bonjour">Bonjour ${echapper(profil.prenom)} 👋</p>` : "";
 
   if (infos.avantDebut) {
-    return `
+    return `${bonjour}
       <section class="bandeau">
         <span class="date">${dateLongue(date)}</span>
         <h1>Le programme commence bientôt 🚀</h1>
@@ -29,7 +30,9 @@ export async function rendu() {
   const semainesBarres = Array.from({ length: p.dureeCycleSemaines }, (_, i) =>
     `<span class="${i < infos.semaineCycle ? "faite" : ""}"></span>`).join("");
 
-  return `
+  const obj = objectifsDuJour(infos);
+  const objectif = donnees.personnalisation.objectifs[objectifDe(profil)];
+  return `${bonjour}
     <section class="bandeau" aria-label="Résumé du jour">
       <span class="date">${dateLongue(date)}</span>
       <h1>Semaine ${infos.semaineCycle} <span style="opacity:.6;font-size:.7em">/ ${p.dureeCycleSemaines}</span>${infos.cycle > 1 ? ` <span style="font-size:.6em;opacity:.8">· cycle ${infos.cycle}</span>` : ""}</h1>
@@ -37,9 +40,11 @@ export async function rendu() {
       <div class="pastilles">
         <span class="pastille">${phase.pastille} ${echapper(phase.nom)}</span>
         <span class="pastille">🍽️ ${echapper(menu.nom)}</span>
-        <span class="pastille">🔥 ${nombre(caloriesDuJour(infos, profil))} calories</span>
-        <span class="pastille">🥩 ${p.objectifs.proteinesGrammes} g de protéines</span>
+        <span class="pastille">🔥 ${nombre(obj.calories)} calories</span>
+        <span class="pastille">🥩 ${obj.proteines} g de protéines</span>
+        <span class="pastille">💧 ${nombre(obj.eau / 1000)} L d'eau</span>
       </div>
+      ${profilComplet(profil) ? `<p class="petit" style="color:#E5E7EB">${objectif.emoji} Objectif : ${echapper(objectif.nom.toLowerCase())}${profil.poidsObjectif ? ` · ${nombre(poidsActuel(profil))} kg → ${nombre(profil.poidsObjectif)} kg` : ""}</p>` : ""}
       <p class="petit" style="color:#E5E7EB">${echapper(phase.resume)}</p>
     </section>
 
@@ -57,21 +62,36 @@ export async function rendu() {
       <p>${echapper(infos.conseil)}</p>
     </section>` : ""}
 
-    <section class="bientot">
-      <span class="gros-emoji" aria-hidden="true">⭕</span>
-      <strong>Bientôt ici</strong>
-      <span class="petit">Les anneaux du jour (séance, calories, protéines, eau), le bouton « + 1 verre d'eau » et la barre vers l'objectif arrivent à l'étape 2.</span>
-    </section>`;
+`;
 }
 
 function carteProfil(profil) {
-  if (profil && profil.poidsDepart) return "";
-  return `
+  if (!profilComplet(profil)) {
+    return `
     <section class="carte">
       <h3>👋 Bienvenue !</h3>
-      <p class="sous-texte">Renseignez votre profil (taille, poids de départ, objectif) pour que l'application calcule vos progrès. Ces informations restent uniquement dans votre téléphone.</p>
+      <p class="sous-texte">Renseignez votre profil (âge, taille, poids, objectif, niveau) : l'application calcule vos besoins et adapte les séances. Ces informations restent uniquement dans votre téléphone.</p>
       <button class="bouton bouton-large" data-aller="reglages">Remplir mon profil</button>
     </section>`;
+  }
+  if (palierAtteint()) {
+    return `
+    <section class="carte carte-coloree theme-repos">
+      <span class="puce-theme">🎉 Nouveau palier</span>
+      <h3>Bravo : 5 kg de moins depuis votre dernier plan !</h3>
+      <p class="petit">Vos besoins ont changé. Un nouveau plan est prêt : vérifiez-le et validez-le.</p>
+      <button class="bouton bouton-large" data-aller="reglages">Voir mon nouveau plan</button>
+    </section>`;
+  }
+  if (!planActif().valide) {
+    return `
+    <section class="carte">
+      <h3>🎯 Votre plan personnalisé est prêt</h3>
+      <p class="sous-texte petit">Calories, protéines et eau calculées pour vous. Validez-le pour que l'application l'applique.</p>
+      <button class="bouton bouton-large" data-aller="reglages">Voir et valider mon plan</button>
+    </section>`;
+  }
+  return "";
 }
 
 function cartePreparation(prep) {

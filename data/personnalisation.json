@@ -1,0 +1,176 @@
+{
+ "version": 1,
+ "note": "Règles de personnalisation selon le profil. Modifiables sans toucher au code.",
+ "sources": {
+  "metabolisme": "Formule de Mifflin-St Jeor (femme) : 10 × poids + 6,25 × taille − 5 × âge − 161 (Mifflin et al., 1990), multipliée par le coefficient d'activité du programme (1,45).",
+  "proteines": "Apports de 1,4 à 2,0 g par kg et par jour pour une personne qui s'entraîne (position de l'International Society of Sports Nutrition, 2017).",
+  "perte": "Environ 7 700 calories de déficit pour 1 kg de graisse perdu (estimation courante)."
+ },
+ "objectifs": {
+  "perte": {
+   "nom": "Perdre du poids",
+   "emoji": "⚖️",
+   "description": "Perte de graisse en gardant le muscle.",
+   "deficitSelonRythme": true,
+   "proteinesParKg": 1.8,
+   "proteinesSur": "poidsVise",
+   "musculation": {
+    "seriesEnPlus": 0,
+    "seriesMax": 4
+   },
+   "gainage": {
+    "toursEnPlus": 0
+   },
+   "cardio": {
+    "cyclesEnPlus": 0,
+    "minutesContinue": null
+   },
+   "resume": "Programme complet : musculation pour garder le muscle, marche en pente pour brûler des calories."
+  },
+  "tonifier": {
+   "nom": "Tonifier et raffermir",
+   "emoji": "✨",
+   "description": "Raffermir la silhouette avec une perte de poids légère.",
+   "deficit": 250,
+   "proteinesParKg": 1.8,
+   "proteinesSur": "poidsVise",
+   "musculation": {
+    "seriesEnPlus": 0,
+    "seriesMax": 4
+   },
+   "gainage": {
+    "toursEnPlus": 1,
+    "toursMax": 4
+   },
+   "cardio": {
+    "cyclesEnPlus": 0,
+    "minutesContinue": null
+   },
+   "resume": "Un tour de gainage en plus, déficit de calories léger."
+  },
+  "muscle": {
+   "nom": "Prendre du muscle",
+   "emoji": "💪",
+   "description": "Gagner en force et en volume musculaire.",
+   "deficit": -150,
+   "proteinesParKg": 2.0,
+   "proteinesSur": "poidsVise",
+   "musculation": {
+    "seriesEnPlus": 1,
+    "seriesMax": 4
+   },
+   "gainage": {
+    "toursEnPlus": 0
+   },
+   "cardio": {
+    "cyclesEnPlus": -2,
+    "cyclesMin": 4,
+    "minutesContinue": 30,
+    "texteContinue": "30 min à 6 %, allure régulière"
+   },
+   "resume": "Une série de plus par exercice, un peu moins de cardio, légère hausse des calories."
+  },
+  "forme": {
+   "nom": "Garder la forme",
+   "emoji": "🌿",
+   "description": "Rester active et en bonne santé, sans chercher à perdre du poids.",
+   "deficit": 0,
+   "proteinesParKg": 1.4,
+   "proteinesSur": "poidsActuel",
+   "musculation": {
+    "seriesEnPlus": 0,
+    "seriesMax": 3
+   },
+   "gainage": {
+    "toursEnPlus": 0
+   },
+   "cardio": {
+    "cyclesEnPlus": 0,
+    "minutesContinue": null
+   },
+   "resume": "Programme allégé : 3 séries au plus, calories d'entretien."
+  }
+ },
+ "rythmes": {
+  "doux": {
+   "nom": "En douceur",
+   "deficit": 300,
+   "texte": "environ 0,3 kg par semaine"
+  },
+  "normal": {
+   "nom": "Normal",
+   "deficit": 450,
+   "texte": "environ 0,4 kg par semaine"
+  },
+  "soutenu": {
+   "nom": "Soutenu",
+   "deficit": 600,
+   "texte": "environ 0,5 kg par semaine"
+  }
+ },
+ "niveaux": {
+  "debutante": {
+   "nom": "Débutante",
+   "description": "Je reprends le sport ou je débute la musculation.",
+   "semainesDAvance": 0
+  },
+  "intermediaire": {
+   "nom": "Intermédiaire",
+   "description": "Je fais du sport régulièrement depuis quelques mois.",
+   "semainesDAvance": 2
+  },
+  "confirmee": {
+   "nom": "Confirmée",
+   "description": "Je connais bien les exercices et je m'entraîne depuis plus d'un an.",
+   "semainesDAvance": 4
+  }
+ },
+ "genes": {
+  "genoux": {
+   "nom": "Genoux",
+   "emoji": "🦵",
+   "remplacements": {
+    "fentes_arriere": "pont_fessier",
+    "flexion_jambes_haltere": "poussee_hanches"
+   },
+   "penteMax": 8,
+   "conseil": "Genoux : les fentes et les flexions avec haltère sont remplacées. Pente limitée à 8 %. Sur la presse, ne descendez pas sous l'angle droit."
+  },
+  "dos": {
+   "nom": "Bas du dos",
+   "emoji": "🦴",
+   "remplacements": {
+    "penche_avant": "flexion_jambes_machine",
+    "marche_halteres": "planche"
+   },
+   "conseil": "Dos : le penché avant et la marche avec haltères sont remplacés. Gardez toujours le ventre serré."
+  },
+  "epaules": {
+   "nom": "Épaules",
+   "emoji": "🙆‍♀️",
+   "remplacements": {
+    "poussee_tete": "tirage_horizontal",
+    "pompes_banc": "pont_fessier"
+   },
+   "conseil": "Épaules : pas de poussée au-dessus de la tête ni de pompes. Charges légères sur la poussée couchée."
+  },
+  "poignets": {
+   "nom": "Poignets",
+   "emoji": "✋",
+   "remplacements": {
+    "pompes_banc": "poussee_couchee",
+    "gainage_quatre_pattes": "gainage_dos"
+   },
+   "conseil": "Poignets : pas d'appui sur les mains. La planche se fait sur les avant-bras."
+  }
+ },
+ "eau": {
+  "minimumMillilitres": 2000,
+  "millilitresParKg": 25,
+  "maximumMillilitres": 3000,
+  "enPlusJourSport": 500
+ },
+ "ecartWeekEnd": 350,
+ "plancherCalories": 1500,
+ "arrondiCalories": 50
+}

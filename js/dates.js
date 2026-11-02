@@ -1,5 +1,6 @@
 // Calendrier du programme : numéro de semaine, phase, menu A ou B, jour de la semaine.
 import { donnees } from "./donnees.js";
+import { adapterPhase, semaineDesDoses, planActif } from "./profil.js";
 
 const JOURS = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
 const MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
@@ -54,24 +55,32 @@ export function infosDuJour(date) {
   const duree = p.dureeCycleSemaines;
   const cycle = Math.floor((semaineProgramme - 1) / duree) + 1;
   const semaineCycle = ((semaineProgramme - 1) % duree) + 1; // 1 à 13
-  const phase = p.phases.find((ph) => ph.semaines.includes(semaineCycle));
+  // Les doses suivent le niveau (semaines d'avance) et l'objectif de la personne.
+  const semaineDoses = semaineDesDoses(semaineCycle);
+  const phaseBase = p.phases.find((ph) => ph.semaines.includes(semaineDoses));
+  const phase = adapterPhase(phaseBase);
   const menu = semaineProgramme % 2 === 1 ? "menuA" : "menuB";
   const estPreparation = texteDate(date) === p.preparation.date;
   const estWeekEnd = nom === "samedi" || nom === "dimanche";
 
   return {
-    date, nomJour: nom, semaineProgramme, cycle, semaineCycle, phase, menu,
+    date, nomJour: nom, semaineProgramme, cycle, semaineCycle, semaineDoses, phase, phaseBase, menu,
     estPreparation, estWeekEnd,
     jour: p.planning[nom],
     conseil: p.conseilsDuCoach[String(semaineCycle)],
   };
 }
 
-// Calories visées pour la journée (semaine ou week-end).
-export function caloriesDuJour(infos, profil) {
-  const o = donnees.programme.objectifs;
-  const base = profil && profil.caloriesSemaine ? profil.caloriesSemaine : o.caloriesSemaine;
-  const ecartWeekEnd = o.caloriesWeekEnd - o.caloriesSemaine;
-  const cible = infos.estWeekEnd ? base + ecartWeekEnd : base;
-  return Math.max(cible, o.plancherCalories);
+// Calories visées pour la journée (semaine ou week-end), selon le plan validé.
+export function caloriesDuJour(infos) {
+  const plan = planActif();
+  const cible = infos.estWeekEnd ? plan.caloriesWeekEnd : plan.caloriesSemaine;
+  return Math.max(cible, donnees.programme.objectifs.plancherCalories);
+}
+
+// Protéines et eau du jour selon le plan.
+export function objectifsDuJour(infos) {
+  const plan = planActif();
+  const sport = infos && !infos.avantDebut && !infos.estWeekEnd && !infos.estPreparation;
+  return { calories: caloriesDuJour(infos || {}), proteines: plan.proteines, eau: sport ? plan.eauSport : plan.eau, valide: plan.valide };
 }
