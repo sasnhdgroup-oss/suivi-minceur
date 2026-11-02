@@ -1,7 +1,7 @@
 // Chargement des fichiers du programme (dossier data/).
 // Pour modifier le programme, les menus ou les aliments, il suffit de modifier ces fichiers.
 
-const FICHIERS = ["programme", "menus", "aliments", "equivalences", "motivation"];
+const FICHIERS = ["programme", "menus", "aliments", "equivalences", "motivation", "mouvements"];
 
 export const donnees = {};
 

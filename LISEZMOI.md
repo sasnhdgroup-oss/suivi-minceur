@@ -25,6 +25,7 @@ Tout le contenu est dans le dossier `data/` :
 | `data/aliments.json` | Base d'aliments : portion, calories, protéines, rayon |
 | `data/equivalences.json` | Remplacements d'un aliment par un autre |
 | `data/motivation.json` | Phrases de motivation (une différente chaque jour) |
+| `data/mouvements.json` | Positions des silhouettes animées de chaque exercice |
 
 Exemples :
 - **Changer un repas** : dans `data/menus.json`, chercher le jour (par exemple `"mardi"` dans `"menuA"`) et modifier le texte, les calories et les protéines.
@@ -46,11 +47,11 @@ Le profil (âge, taille, poids), les pesées et les séances sont enregistrés u
 | Étape | Contenu | État |
 |---|---|---|
 | 1 | Fondations : fichiers, charte, 5 onglets, données | ✅ Faite |
-| 2 | Aujourd'hui (anneaux, eau) et calendrier par mois | À faire |
+| 2 | Calendrier par mois et semaine par semaine, détail de chaque jour à cocher, série de jours réussis | ✅ Fait (anneaux et eau : à faire) |
 | 3 | Séance guidée : charges, minuteurs, écran allumé | À faire |
 | 4 | Repas : cases, remplacements, compteurs, courses | À faire |
 | 5 | Mon corps : poids, mensurations, graphiques | À faire |
-| 6 | Animations : silhouettes, confettis, badges | À faire |
+| 6 | Animations : silhouettes des 21 exercices | ✅ Fait (confettis, badges : à faire) |
 | 7 | Hors ligne et sauvegarde | À faire |
 | 8 | Mise en ligne finale et guide d'installation | À faire |
 

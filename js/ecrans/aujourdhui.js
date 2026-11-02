@@ -1,7 +1,7 @@
 // Onglet « Aujourd'hui » : date, semaine, phase, séance et repas du jour.
 // Étape 1 : lecture seule. Les anneaux et les cases à cocher arrivent à l'étape 2.
 import { donnees } from "../donnees.js";
-import { aujourdhui, infosDuJour, dateLongue, caloriesDuJour } from "../dates.js";
+import { aujourdhui, infosDuJour, dateLongue, caloriesDuJour, texteDate } from "../dates.js";
 import { echapper, detailBloc, phraseDuJour, nombre } from "../outils.js";
 import { lire } from "../stockage.js";
 
@@ -80,6 +80,7 @@ function cartePreparation(prep) {
       <span class="puce-theme">🗓️ Préparation</span>
       <h2>${echapper(prep.titre)}</h2>
       <ul class="liste-simple">${prep.liste.map((l) => `<li>${echapper(l)}</li>`).join("")}</ul>
+      <button class="bouton bouton-secondaire bouton-large" data-aller="jour/${prep.date}">✅ Cocher ma préparation</button>
     </section>`;
 }
 
@@ -99,7 +100,8 @@ function carteSeance(infos) {
       </div>
       <h2>${infos.estWeekEnd ? "Mon week-end" : "Ma séance du jour"}</h2>
       ${infos.estWeekEnd ? "" : `<ul class="planning">${lignes}</ul>`}
-      ${aUneSeance ? `<button class="bouton bouton-large" data-aller="seance">Voir les exercices</button>` : ""}
+      ${aUneSeance ? `<button class="bouton bouton-large" data-aller="seance">🎬 Voir les exercices animés</button>` : ""}
+      <button class="bouton bouton-secondaire bouton-large" data-aller="jour/${texteDate(infos.date)}">✅ Le détail de ma journée à cocher</button>
       ${infos.estWeekEnd ? `<ul class="liste-simple">${donnees.programme.weekEnd.map((l) => `<li>${echapper(l)}</li>`).join("")}${infos.nomJour === "dimanche" ? "<li>👩‍🍳 Cuisine du dimanche (1 heure) : voir l'onglet Repas</li>" : ""}</ul>` : ""}
     </section>`;
 }

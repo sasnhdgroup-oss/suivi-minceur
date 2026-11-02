@@ -7,31 +7,37 @@ import * as repas from "./ecrans/repas.js";
 import * as corps from "./ecrans/corps.js";
 import * as calendrier from "./ecrans/calendrier.js";
 import * as reglages from "./ecrans/reglages.js";
+import * as jour from "./ecrans/jour.js";
 
-const ECRANS = { aujourdhui, seance, repas, corps, calendrier, reglages };
+const ECRANS = { aujourdhui, seance, repas, corps, calendrier, reglages, jour };
+// Onglet à mettre en valeur pour les écrans qui n'ont pas leur propre onglet
+const ONGLET_PARENT = { jour: "calendrier", reglages: null };
 const conteneur = document.getElementById("ecran");
 const titre = document.getElementById("entete-titre");
 
-async function afficher(nom) {
+async function afficher(adresse) {
+  const [nom, parametre] = String(adresse || "").split("/");
   const ecran = ECRANS[nom] || ECRANS.aujourdhui;
+  const nomEcran = ECRANS[nom] ? nom : "aujourdhui";
+  const onglet = nomEcran in ONGLET_PARENT ? ONGLET_PARENT[nomEcran] : nomEcran;
   document.querySelectorAll(".onglet").forEach((b) => {
-    if (b.dataset.ecran === nom) b.setAttribute("aria-current", "page");
+    if (b.dataset.ecran === onglet) b.setAttribute("aria-current", "page");
     else b.removeAttribute("aria-current");
   });
-  titre.textContent = ecran.titre;
+  titre.textContent = ecran.titreDynamique ? ecran.titreDynamique(parametre) : ecran.titre;
   try {
-    conteneur.innerHTML = await ecran.rendu();
+    conteneur.innerHTML = await ecran.rendu(parametre);
+    window.scrollTo(0, 0);
     if (ecran.activer) ecran.activer(conteneur, { afficher: aller });
   } catch (erreur) {
     console.error(erreur);
     conteneur.innerHTML = `<div class="carte"><h2>Oups</h2><p>Un problème est survenu : ${String(erreur.message || erreur)}</p></div>`;
   }
-  window.scrollTo(0, 0);
 }
 
-function aller(nom) {
-  if (location.hash !== `#${nom}`) location.hash = nom;
-  else afficher(nom);
+function aller(adresse) {
+  if (location.hash !== `#${adresse}`) location.hash = adresse;
+  else afficher(adresse);
 }
 
 async function demarrer() {

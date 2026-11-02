@@ -278,3 +278,127 @@ button { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ---------- Silhouettes animées ---------- */
+.animation { width: 100%; height: auto; display: block; aspect-ratio: 200 / 170; }
+.anim-sol { stroke: var(--bordure); stroke-width: 3; stroke-linecap: round; }
+.anim-objet { fill: color-mix(in srgb, var(--texte-doux) 28%, transparent); }
+.anim-trait { stroke: color-mix(in srgb, var(--texte-doux) 35%, transparent); stroke-linecap: round; }
+.anim-corps { stroke: var(--couleur, var(--accent)); color: var(--couleur, var(--accent)); }
+.anim-loin { opacity: .42; }
+.anim-membre { stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+.anim-pied { stroke-width: 6; stroke-linecap: round; }
+.anim-torse { stroke-width: 15; stroke-linecap: round; }
+.anim-tete { fill: currentColor; stroke: none; }
+.anim-poids { fill: var(--texte); opacity: .8; }
+.anim-disque { fill: none; stroke: var(--texte); stroke-width: 4; opacity: .7; }
+.anim-barre { stroke: var(--texte); stroke-width: 4; stroke-linecap: round; opacity: .8; }
+.anim-plateau { stroke-width: 6; }
+.anim-cable { stroke: var(--texte-doux); stroke-width: 1.5; stroke-dasharray: 3 3; }
+
+/* ---------- Grille d'exercices animés ---------- */
+.grille-tuiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tuile {
+  border: 0; cursor: pointer; text-align: left;
+  background: var(--surface); border-radius: 14px; padding: 8px 8px 10px;
+  display: flex; flex-direction: column; gap: 4px; min-width: 0;
+  box-shadow: var(--ombre); transition: transform .12s ease;
+}
+.tuile:active { transform: scale(.97); }
+.tuile .animation { background: color-mix(in srgb, var(--couleur, var(--accent)) 7%, var(--surface)); border-radius: 10px; }
+.tuile-nom { font-family: var(--titres); font-weight: 800; font-size: 15px; line-height: 1.15; padding: 2px 2px 0; }
+.tuile-doses { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.tuile-reps {
+  background: var(--couleur, var(--accent)); color: #fff; font-weight: 800; font-size: 13px;
+  border-radius: 6px; padding: 2px 7px;
+}
+@media (prefers-color-scheme: dark) { .tuile-reps { color: #0F1016; } }
+.tuile-series { font-size: 13px; font-weight: 700; color: var(--texte-doux); }
+
+/* ---------- Fiche plein écran ---------- */
+.fiche {
+  border: 0; padding: 0; margin: auto 0 0; width: 100%; max-width: 640px; max-height: 92dvh;
+  border-radius: 22px 22px 0 0; background: var(--surface); color: var(--texte);
+  margin-left: auto; margin-right: auto;
+}
+.fiche::backdrop { background: rgba(10, 11, 16, .55); }
+.fiche[open] { animation: monter .25s ease both; }
+@keyframes monter { from { transform: translateY(30px); opacity: 0; } to { transform: none; opacity: 1; } }
+.fiche-contenu { padding: 14px 16px calc(20px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 12px; }
+.fiche-haut { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.fiche-animation { background: var(--surface-2); border-radius: 16px; padding: 6px; --couleur: var(--accent); }
+
+/* ---------- Détail d'une journée ---------- */
+.navigation-jours { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; }
+.navigation-jours .bouton { padding: 10px 8px; font-size: 15px; }
+.jauge { height: 10px; border-radius: 6px; background: rgba(255, 255, 255, .18); overflow: hidden; }
+.jauge span { display: block; height: 100%; background: var(--accent); border-radius: 6px; transition: width .3s ease; }
+.liste-exercices { display: flex; flex-direction: column; gap: 8px; }
+.ligne-exercice {
+  display: grid; grid-template-columns: 132px 1fr 52px; grid-template-areas: "anim titre coche" "anim texte texte";
+  gap: 2px 10px; align-items: start;
+  background: var(--surface); border-radius: 14px; padding: 8px;
+}
+.ligne-exercice .ligne-anim { grid-area: anim; align-self: center; }
+.ligne-exercice .ligne-titre { grid-area: titre; align-self: center; line-height: 1.2; }
+.ligne-exercice .coche { grid-area: coche; }
+.ligne-exercice .ligne-texte { grid-area: texte; }
+.faite .ligne-titre { text-decoration: line-through; text-decoration-thickness: 2px; opacity: .7; }
+.ligne-anim { border: 0; padding: 0; background: color-mix(in srgb, var(--couleur) 8%, var(--surface)); border-radius: 10px; cursor: pointer; }
+.ligne-texte { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ligne-dose { font-weight: 700; color: var(--couleur, var(--texte)); font-size: 15px; }
+.ligne-numero { color: var(--texte-doux); font-weight: 700; }
+.ligne-texte .detail, .detail { color: var(--texte-doux); font-size: 14px; }
+.faite .ligne-texte strong { text-decoration: line-through; text-decoration-thickness: 2px; opacity: .7; }
+.bloc-simple { padding: 12px; }
+.bloc-ligne { display: grid; grid-template-columns: 36px 1fr 52px; gap: 10px; align-items: center; }
+.bloc-emoji { font-size: 26px; text-align: center; }
+.bloc-simple .ligne-dose { color: var(--texte-doux); font-weight: 600; }
+.bloc-simple.faite { background: var(--vert-fond); border-color: transparent; }
+
+.coche { position: relative; width: 52px; height: 52px; display: grid; place-items: center; cursor: pointer; }
+.coche input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+.coche-carre {
+  width: 36px; height: 36px; border-radius: 10px; border: 3px solid var(--couleur, var(--vert));
+  background: var(--surface); display: grid; place-items: center; transition: background .15s ease, transform .15s ease;
+}
+.coche input:checked + .coche-carre { background: var(--couleur, var(--vert)); transform: scale(1.05); }
+.coche input:checked + .coche-carre::after { content: ""; width: 10px; height: 18px; border: solid #fff; border-width: 0 4px 4px 0; transform: rotate(45deg) translate(-1px, -2px); }
+.coche input:focus-visible + .coche-carre { outline: 3px solid var(--accent); outline-offset: 2px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Calendrier par mois ---------- */
+.grille-mois { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.entete-jour { text-align: center; font-size: 12px; font-weight: 700; color: var(--texte-doux); padding-bottom: 2px; }
+.case-jour {
+  aspect-ratio: 1 / 1.1; border: 0; border-radius: 10px; cursor: pointer; padding: 3px 2px;
+  background: var(--couleur-fond, var(--surface-2)); display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+  min-height: 44px;
+}
+.case-jour:disabled { opacity: .35; cursor: default; }
+.case-jour.theme-aucun { background: var(--surface-2); }
+.case-numero { font-weight: 800; font-size: 14px; }
+.case-marque { font-size: 15px; line-height: 1; }
+.case-jour.aujourdhui { outline: 3px solid var(--accent); outline-offset: -1px; }
+.case-jour.faite { box-shadow: inset 0 -4px 0 var(--couleur, var(--vert)); }
+.legendes { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 13px; color: var(--texte-doux); }
+.legende { display: inline-flex; align-items: center; gap: 5px; }
+.legende-pastille { width: 12px; height: 12px; border-radius: 4px; background: var(--couleur); display: inline-block; }
+
+/* ---------- Programme semaine par semaine ---------- */
+.semaine { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--rayon); padding: 4px 12px; box-shadow: var(--ombre); scroll-margin-top: calc(var(--haut-entete) + env(safe-area-inset-top) + 12px); }
+.semaine summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: var(--cible); flex-wrap: wrap; padding: 6px 0; }
+.semaine summary::-webkit-details-marker { display: none; }
+.semaine summary::after { content: "▾"; color: var(--texte-doux); }
+.semaine[open] summary::after { content: "▴"; }
+.liste-jours { display: flex; flex-direction: column; gap: 8px; padding: 6px 0 12px; }
+.jour-liste {
+  border: 0; text-align: left; cursor: pointer; border-radius: 12px; padding: 10px 12px;
+  background: var(--couleur-fond, var(--surface-2)); display: flex; flex-direction: column; gap: 3px;
+  border-left: 0;
+}
+.jour-liste.aujourdhui { outline: 3px solid var(--accent); }
+.jour-liste-date { display: flex; justify-content: space-between; gap: 8px; }
+.jour-liste-etat { font-weight: 700; font-size: 14px; }
+.jour-liste-titre { font-weight: 700; font-size: 15px; }
+.theme-repos .accent-theme, .theme-aucun .accent-theme { color: var(--vert); }
