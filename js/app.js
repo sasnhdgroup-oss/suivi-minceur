@@ -9,10 +9,12 @@ import * as corps from "./ecrans/corps.js";
 import * as calendrier from "./ecrans/calendrier.js";
 import * as reglages from "./ecrans/reglages.js";
 import * as jour from "./ecrans/jour.js";
+import * as guidee from "./ecrans/guidee.js";
 
-const ECRANS = { aujourdhui, seance, repas, corps, calendrier, reglages, jour };
+const ECRANS = { aujourdhui, seance, repas, corps, calendrier, reglages, jour, guidee };
+let ecranActuel = null;
 // Onglet à mettre en valeur pour les écrans qui n'ont pas leur propre onglet
-const ONGLET_PARENT = { jour: "calendrier", reglages: null };
+const ONGLET_PARENT = { jour: "calendrier", reglages: null, guidee: "seance" };
 const conteneur = document.getElementById("ecran");
 const titre = document.getElementById("entete-titre");
 
@@ -20,6 +22,8 @@ async function afficher(adresse) {
   const [nom, parametre] = String(adresse || "").split("/");
   const ecran = ECRANS[nom] || ECRANS.aujourdhui;
   const nomEcran = ECRANS[nom] ? nom : "aujourdhui";
+  if (ecranActuel && ecranActuel !== ecran && ecranActuel.quitter) ecranActuel.quitter();
+  ecranActuel = ecran;
   const onglet = nomEcran in ONGLET_PARENT ? ONGLET_PARENT[nomEcran] : nomEcran;
   document.querySelectorAll(".onglet").forEach((b) => {
     if (b.dataset.ecran === onglet) b.setAttribute("aria-current", "page");

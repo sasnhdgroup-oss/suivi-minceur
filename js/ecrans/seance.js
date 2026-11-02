@@ -53,7 +53,8 @@ export async function rendu() {
       <span class="date">${dateLongue(date)} · semaine ${infos.semaineCycle}</span>
       <h1>${contenu.emoji} ${echapper(contenu.titre)}</h1>
       <p class="petit" style="color:#E5E7EB">${prog.faits} sur ${prog.total} étapes cochées${prog.faite ? " · séance faite ✅" : ""}</p>
-      <button class="bouton bouton-large" data-aller="jour/${contenu.cleDate}">Cocher ma séance pas à pas</button>
+      <button class="bouton bouton-large bouton-geant" data-aller="guidee/${contenu.cleDate}">▶️ ${prog.faits ? "Reprendre" : "Commencer"} la séance guidée</button>
+      <button class="bouton bouton-secondaire bouton-large" data-aller="jour/${contenu.cleDate}">✅ Cocher ma séance sans être guidée</button>
     </section>
     ${cartes}
     <section class="carte">

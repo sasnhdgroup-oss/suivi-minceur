@@ -112,6 +112,7 @@ export async function rendu(param) {
       <div class="jauge" role="progressbar" aria-valuemin="0" aria-valuemax="${prog.total}" aria-valuenow="${prog.faits}"><span style="width:${Math.round((prog.faits / prog.total) * 100)}%"></span></div>
       <p class="petit" style="color:#E5E7EB" id="texte-progression">${prog.faits} sur ${prog.total} étapes faites${prog.faite ? " · journée réussie ✅" : ""}</p>` : ""}
     </section>
+    ${contenu.blocs.some((b) => b.exercices) ? `<button class="bouton bouton-large bouton-geant" data-aller="guidee/${dateCourante}">▶️ Séance guidée</button>` : ""}
     ${infos.conseil && !infos.estWeekEnd ? `<p class="avertissement">💡 ${echapper(infos.conseil)}</p>` : ""}
     ${blocs}
     ${prog.total ? `<button class="bouton ${prog.faite ? "bouton-secondaire" : ""} bouton-large" id="tout-cocher" data-etat="${prog.faite ? "1" : "0"}">${prog.faite ? "Tout décocher" : "✅ Tout est fait"}</button>` : ""}

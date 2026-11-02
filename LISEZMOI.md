@@ -54,7 +54,7 @@ Le profil (âge, taille, poids), les pesées et les séances sont enregistrés u
 |---|---|---|
 | 1 | Fondations : fichiers, charte, 5 onglets, données | ✅ Faite |
 | 2 | Calendrier par mois et semaine par semaine, détail de chaque jour à cocher, série de jours réussis | ✅ Fait (anneaux et eau : à faire) |
-| 3 | Séance guidée : charges, minuteurs, écran allumé | À faire |
+| 3 | Séance guidée : charges, minuteurs, écran allumé | ✅ Fait |
 | 4 | Repas : cases, remplacements, compteurs, courses | À faire |
 | 5 | Mon corps : poids, mensurations, graphiques | À faire |
 | 6 | Animations : silhouettes des 21 exercices | ✅ Fait (confettis, badges : à faire) |

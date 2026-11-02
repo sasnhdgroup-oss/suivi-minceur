@@ -120,7 +120,8 @@ function carteSeance(infos) {
       </div>
       <h2>${infos.estWeekEnd ? "Mon week-end" : "Ma séance du jour"}</h2>
       ${infos.estWeekEnd ? "" : `<ul class="planning">${lignes}</ul>`}
-      ${aUneSeance ? `<button class="bouton bouton-large" data-aller="seance">🎬 Voir les exercices animés</button>` : ""}
+      ${aUneSeance ? `<button class="bouton bouton-large bouton-geant" data-aller="guidee/${texteDate(infos.date)}">▶️ Commencer la séance</button>
+      <button class="bouton bouton-secondaire bouton-large" data-aller="seance">🎬 Voir les exercices animés</button>` : ""}
       <button class="bouton bouton-secondaire bouton-large" data-aller="jour/${texteDate(infos.date)}">✅ Le détail de ma journée à cocher</button>
       ${infos.estWeekEnd ? `<ul class="liste-simple">${donnees.programme.weekEnd.map((l) => `<li>${echapper(l)}</li>`).join("")}${infos.nomJour === "dimanche" ? "<li>👩‍🍳 Cuisine du dimanche (1 heure) : voir l'onglet Repas</li>" : ""}</ul>` : ""}
     </section>`;

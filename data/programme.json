@@ -1024,7 +1024,9 @@
    "erreurFrequente": "Cambrer le bas du dos en haut du mouvement au lieu de serrer les fessiers.",
    "conseil": "Gardez le menton rentré et le regard vers vos genoux : le bassin bascule mieux.",
    "reposSecondes": 90,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 2.5,
+   "avecCharge": true
   },
   "presse_cuisses": {
    "nom": "Presse à cuisses",
@@ -1042,7 +1044,9 @@
    "erreurFrequente": "Laisser le bas du dos se décoller du dossier en descendant trop bas.",
    "conseil": "Les genoux suivent la direction des pointes de pieds, sans rentrer vers l'intérieur.",
    "reposSecondes": 90,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 2.5,
+   "avecCharge": true
   },
   "fentes_arriere": {
    "nom": "Fentes arrière",
@@ -1061,7 +1065,9 @@
    "erreurFrequente": "Le genou avant qui part loin devant les orteils.",
    "conseil": "Gardez le buste droit et le poids sur le talon avant. Tenez-vous à un support si l'équilibre est difficile.",
    "reposSecondes": 75,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": true
   },
   "flexion_jambes_machine": {
    "nom": "Flexion des jambes à la machine",
@@ -1079,7 +1085,9 @@
    "erreurFrequente": "Soulever le bassin pour tricher et aller plus loin.",
    "conseil": "Le retour lent (3 secondes) compte autant que la flexion.",
    "reposSecondes": 60,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 2.5,
+   "avecCharge": true
   },
   "ecartement_cuisses": {
    "nom": "Écartement des cuisses à la machine",
@@ -1097,7 +1105,9 @@
    "erreurFrequente": "Aller trop vite et laisser la machine ramener les jambes d'un coup.",
    "conseil": "Penchez légèrement le buste en avant pour mieux sentir le haut des fessiers.",
    "reposSecondes": 45,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 2.5,
+   "avecCharge": true
   },
   "tirage_horizontal": {
    "nom": "Tirage horizontal assis",
@@ -1115,7 +1125,9 @@
    "erreurFrequente": "Se balancer d'avant en arrière avec le buste pour tirer plus lourd.",
    "conseil": "Pensez à tirer avec les coudes, pas avec les mains.",
    "reposSecondes": 75,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 2.5,
+   "avecCharge": true
   },
   "tirage_vertical": {
    "nom": "Tirage vertical",
@@ -1134,7 +1146,9 @@
    "erreurFrequente": "Tirer la barre derrière la nuque.",
    "conseil": "Imaginez que vous voulez mettre les coudes dans vos poches arrière.",
    "reposSecondes": 75,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 2.5,
+   "avecCharge": true
   },
   "poussee_couchee": {
    "nom": "Poussée couchée avec haltères",
@@ -1152,7 +1166,9 @@
    "erreurFrequente": "Ouvrir les coudes à 90°, ce qui fatigue les épaules.",
    "conseil": "Gardez les omoplates serrées contre le banc pendant toute la série.",
    "reposSecondes": 75,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": true
   },
   "poussee_tete": {
    "nom": "Poussée au-dessus de la tête",
@@ -1170,7 +1186,9 @@
    "erreurFrequente": "Creuser le bas du dos pour pousser plus lourd.",
    "conseil": "Serrez les abdominaux et gardez le dos collé au dossier.",
    "reposSecondes": 75,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": true
   },
   "flexion_bras": {
    "nom": "Flexion des bras avec haltères",
@@ -1187,7 +1205,9 @@
    "erreurFrequente": "Balancer le dos pour monter la charge.",
    "conseil": "Les coudes restent collés au corps, comme fixés.",
    "reposSecondes": 60,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": true
   },
   "extension_bras_poulie": {
    "nom": "Extension des bras à la poulie",
@@ -1205,7 +1225,9 @@
    "erreurFrequente": "Laisser les coudes partir vers l'avant.",
    "conseil": "Seuls les avant-bras bougent : les coudes ne quittent pas les côtes.",
    "reposSecondes": 60,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 2.5,
+   "avecCharge": true
   },
   "flexion_jambes_haltere": {
    "nom": "Flexion des jambes avec haltère",
@@ -1223,7 +1245,9 @@
    "erreurFrequente": "Les talons qui se décollent ou le dos qui s'arrondit.",
    "conseil": "Les coudes passent entre les genoux en bas : cela garde le buste droit.",
    "reposSecondes": 90,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": true
   },
   "penche_avant": {
    "nom": "Penché avant avec haltères",
@@ -1241,7 +1265,9 @@
    "erreurFrequente": "Arrondir le dos pour descendre plus bas.",
    "conseil": "Descendez seulement tant que le dos reste plat. Demandez au coach de vérifier le geste.",
    "reposSecondes": 90,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": true
   },
   "pompes_banc": {
    "nom": "Pompes mains sur un banc",
@@ -1259,7 +1285,9 @@
    "erreurFrequente": "Laisser le bassin s'affaisser.",
    "conseil": "Plus le support est haut, plus c'est facile : adaptez la hauteur.",
    "reposSecondes": 60,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": false
   },
   "tirage_un_bras": {
    "nom": "Tirage d'un bras avec haltère",
@@ -1277,7 +1305,9 @@
    "erreurFrequente": "Tourner le buste pour monter l'haltère.",
    "conseil": "Le dos reste parallèle au sol, comme une table.",
    "reposSecondes": 60,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": true
   },
   "marche_halteres": {
    "nom": "Marche avec haltères",
@@ -1295,7 +1325,9 @@
    "erreurFrequente": "Se pencher sur le côté ou hausser les épaules.",
    "conseil": "Regardez droit devant et serrez le ventre comme pour un gainage.",
    "reposSecondes": 60,
-   "mesure": "distance"
+   "mesure": "distance",
+   "pasCharge": 1,
+   "avecCharge": true
   },
   "planche": {
    "nom": "Planche (gainage)",
@@ -1312,7 +1344,9 @@
    "erreurFrequente": "Le bassin trop haut ou qui s'affaisse.",
    "conseil": "Si c'est trop dur, posez les genoux au sol.",
    "reposSecondes": 45,
-   "mesure": "duree"
+   "mesure": "duree",
+   "pasCharge": 1,
+   "avecCharge": false
   },
   "planche_cote": {
    "nom": "Planche sur le côté",
@@ -1329,7 +1363,9 @@
    "erreurFrequente": "Laisser le bassin tomber vers le sol.",
    "conseil": "Version plus facile : genoux pliés et posés au sol.",
    "reposSecondes": 45,
-   "mesure": "duree"
+   "mesure": "duree",
+   "pasCharge": 1,
+   "avecCharge": false
   },
   "gainage_dos": {
    "nom": "Gainage sur le dos",
@@ -1347,7 +1383,9 @@
    "erreurFrequente": "Le bas du dos qui se décolle du sol.",
    "conseil": "Allez lentement : la qualité compte plus que l'amplitude.",
    "reposSecondes": 45,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": false
   },
   "gainage_quatre_pattes": {
    "nom": "Gainage à quatre pattes",
@@ -1364,7 +1402,9 @@
    "erreurFrequente": "Cambrer le dos en montant la jambe trop haut.",
    "conseil": "Imaginez un verre d'eau posé sur votre dos : il ne doit pas tomber.",
    "reposSecondes": 45,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": false
   },
   "pont_fessier": {
    "nom": "Pont fessier",
@@ -1381,7 +1421,9 @@
    "erreurFrequente": "Pousser avec le bas du dos au lieu des fessiers.",
    "conseil": "Pointes de pieds légèrement relevées : les fessiers travaillent davantage.",
    "reposSecondes": 45,
-   "mesure": "repetitions"
+   "mesure": "repetitions",
+   "pasCharge": 1,
+   "avecCharge": false
   }
  },
  "conseilsDuCoach": {
